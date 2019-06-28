@@ -16,232 +16,383 @@
 
 # Locale.
 
-hi_IN:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "नियम और शर्तें"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: "ओह, मीटिंग शुरू करते समय एक एरर हुई!"
-  cancel: रद्द करना
+        accepted_terms: "Terms and Conditions"
+  administrator:
+    site_settings:
+      authentication:
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to Greenlight to join this room
+      branding:
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
+      color:
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
+        regular: Regular
+        lighten: Lighten
+        Darken: Darken
+      registration:
+        info: Change the way that users register to the website
+        title: Registration Method
+        methods:
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
+    flash:
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
+    users:
+      invite: Invite User
+      edit:
+        title: Edit User Details
+      settings:
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
+      table:
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
+        username: Username
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode VLE
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: "कुकीज़ हमें अपनी सेवाएं देने में मदद करती हैं। हमारी सेवाओं का उपयोग करके, आप कुकी के हमारे उपयोग के लिए सहमत हैं।"
-    cookie_button: मैं सहमत हूँ
-  copy: कापी
-  delete: मिटाना
-  delivery_error: ईमेल वितरण के दौरान एक त्रुटि हुई। एक व्यवस्थापक से संपर्क करें!
-  docs: प्रलेखन
-  email: ईमेल
-  email_sent: ईमेल भेजा! (यदि आपने इसे प्राप्त नहीं किया है तो कृपया अपना स्पैम फ़ोल्डर देखें)
-  enter_your_name: अपना नाम दर्ज करें!
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
+  copied: Copied
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
+  email: Email
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
+    bigbluebutton:
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: अरे नहीं! लग रहा है कि हमारी ओर से गलत हो गया।
-      help: "त्रुटि लॉग की गई है, हम देख लेंगे!"
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: "यदि आप एक व्यवस्थापक नहीं हैं, तो कृपया व्यवस्थापक से संपर्क करें।"
-      continue: मैं संस्करण 1.0 का उपयोग करना चाहता हूं।
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        ग्रीनलाइट को डेटाबेस माइग्रेशन त्रुटि का सामना करना पड़ा। ऐसा इसलिए हो सकता है क्योंकि आपने ग्रीनलाइट 2.0 में अपडेट नहीं किया है।
-      upgrade: मुझे 2.0 में अपग्रेड करने का तरीका दिखाएं!
-      version: "हमने ग्रीनलाइट का एक नया संस्करण जारी किया है, लेकिन आपका डेटाबेस संगत नहीं है।"
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
+    messages:
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: ओह! लगता है कि हम ऐसा नहीं कर सकते।
-      help: "क्या यह संभव है कि इसे हटा दिया गया है?"
-    title: त्रुटियाँ
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
+    unauthorized:
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
     unprocessable:
-      message: अनुरोध अप्राप्य है।
-      help: दुर्भाग्य से यह एक वैध अनुरोध नहीं है।
-  expired_reset_token: पासवर्ड रीसेट लिंक की समय सीमा समाप्त हो गई है!
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: विशेषताएं
-    rooms: निजीकृत कमरे
-    recordings: रिकॉर्डिंग प्रबंधन
-    designs: कस्टम डिजाइन
-    authentication: प्रयोक्ता प्रमाणीकरण
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "द्वारा संचालित 1%{href}."
+    powered_by: Powered by %{href}.
   forgot_password:
-    subtitle: पासवर्ड भूल गए
-    email: ईमेल
-    submit: जमा करें
-  go_back: वापस जाना
-  greenlight: "ग्रीनलाइट "
+    subtitle: Forgot Password
+    email: Email
+    submit: Submit
+  go_back: Go back
+  greenlight: Greenlight
   header:
-    create_room: "कमरा बनाना "
+    all_recordings: All Recordings
     dropdown:
-      help: "मदद चाहिए क्या ?"
-      home: घर का कमरा
-      settings: सेटिंग्स
-      signout: साइन आउट
-  home_room: घर का कमरा
-  info_update_success: जानकारी सफलतापूर्वक अपडेट की गई।
-  invalid_user: "उपयोगकर्ता नहीं मिलने के कारण लॉगिन विफल हुआ। क्या आप सुनिश्चित हैं कि ईमेल सही है?"
-  invalid_credentials: "उपयोगकर्ता नहीं मिलने के कारण लॉगिन विफल हुआ। क्या आप सुनिश्चित हैं कि ईमेल सही है?"
-  invalid_login_method: खाता मिसमैच के कारण लॉगिन विफल रहा। आपको omniauth के साथ लॉग इन करना होगा।
-  invite_message: "किसी को बैठक में आमंत्रित करने के लिए, उन्हें यह लिंक भेजें:"
+      account_settings: Organization
+      help: Need help?
+      home: Home
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: 'ने आपको रिकॉर्डिंग देखने के लिए आमंत्रित किया है।'
-        body: 'रिकॉर्डिंग देखने के लिए, नीचे दिए गए लिंक का पालन करें:'
-        autogenerated: 'यह ई-मेल BigBlueButton द्वारा ऑटो-जनरेट किया गया है।'
-        footer: 'BigBlueButton एक ओपन सोर्स वेब कॉन्फ्रेंसिंग सिस्टम है। BigBlueButton पर अधिक जानकारी के लिए, https://bigbluebutton.org/ देखें।'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
+        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "1%{href} आपके BigBlueButton ओपन-सोर्स वेब कॉन्फ्रेंसिंग सर्वर के लिए एक सरल फ्रंट-एंड है। आप सत्रों की मेजबानी करने के लिए अपने कमरे बना सकते हैं, या एक छोटी और सुविधाजनक लिंक का उपयोग करके दूसरों को शामिल कर सकते हैं।"
-    welcome: BigBlueButton में आपका स्वागत है।
-    video: ग्रीनलाइट का उपयोग करने पर हमारा ट्यूटोरियल देखें
-    upgrade: मुझे 2.0 में अपग्रेड करने का तरीका दिखाएं!
-    version: "हमने ग्रीनलाइट का एक नया संस्करण जारी किया है, लेकिन आपका डेटाबेस संगत नहीं है !"
-  language_name: अंग्रेज़ी
-  language_default: डिफ़ॉल्ट (ब्राउज़र भाषा)
-  ldap_error: LDAP सर्वर से कनेक्ट करने में असमर्थ। कृपया env फ़ाइल में अपना LDAP कॉन्फ़िगरेशन जांचें और सुनिश्चित करें कि आपका सर्वर चल रहा है।
-  login: प्रवेश करने देना
+    about: "Welcome to GoCode Academy VLE. To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: Watch our tutorial for students on using the online platform. 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
+      approve:
+        info: Your account has been approved.
+        signin: To access your personal rooms, click the button below and sign in.
+        signin_link: Sign In
+        signup:
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
+      demoted:
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
+      invite:
+        info: You have been invited to your own personal space by %{name}
+        signup: To signup using your email, click the button below and follow the steps.
+        signup_link: Sign Up
+        signup:
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: 'पासवर्ड रीसेट'
-        welcome: "ऐसा लगता है जैसे आप अपना पासवर्ड भूल गए हैं 1%{bigbluebutton}"
-        message: 'यदि यह सही है, तो कृपया अपना पासवर्ड रीसेट करने के लिए नीचे दिए गए लिंक पर क्लिक करें:'
-        reset_link: पासवर्ड रीसेट
-        expire: यह लिंक दो घंटे में समाप्त हो जाएगा।
-        ignore: यदि आप पासवर्ड रीसेट का अनुरोध नहीं करते हैं तो आप इस ईमेल को सुरक्षित रूप से अनदेखा कर सकते हैं।
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
+      promoted:
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "1%{bigbluebutton} में स्वागत , 2%{name}!"
-        success: "आपने सफलतापूर्वक अपना पंजीकरण करा लिया है 1%{bigbluebutton} लेखा। आपका यूज़रनेम है  2%{email} । "
-        verify: "अपने खाते को सत्यापित करने के लिए, बस नीचे दिए गए बटन पर क्लिक करें।"
-        verify_text: 'अपने खाते को सत्यापित करने के लिए, बस इस लिंक का पालन करें: 1%{url}'
-        verify_link: खाता सत्यापित करें
-        thanks: जुड़ने के लिए धन्यवाद और आपका दिन मंगलमय हो!
-  max_concurrent: अधिकतम समवर्ती सत्रों की अनुमति दी गई है!
+        welcome: Welcome to your personal space, %{name}!
+        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: अधिकतम समवर्ती सत्रों की अनुमति दी गई है!
-      free_delete: आप किसी भी समय इस कमरे को हटाने के लिए स्वतंत्र होंगे।
-      name_placeholder: एक कमरे का नाम दर्ज करें ...
-      not_blank: कमरे का नाम रिक्त नहीं हो सकता।
-      title: नया कक्ष बनाएँ
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: "क्या आप इस खाते को हटाने के लिए सुनिश्चित हैं?"
-      delete: "मुझे यकीन है, मेरा खाता हटा दें"
-      keep: "वास्तव में, मैं इसे रखूंगा।"
-      warning: यह निर्णय अंतिम है। आप संबंधित डेटा को पुनर्प्राप्त नहीं कर पाएंगे।
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "क्या आप पक्का इसे हटाना चाहते हैं 1%{room} ?"
-      delete: "मुझे यकीन है, इस कमरे को हटा दें।"
-      keep: "दूसरे विचार पर, मैं इसे रखूँगा।"
-      warning: आप इस कमरे या इसकी किसी भी संबंधित रिकॉर्डिंग को पुनर्प्राप्त नहीं कर पाएंगे।
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
+    invite_user:
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: या
-      with: "के साथ साइन इन करें 1%{provider}"
-      forgot_password: "पासवर्ड भूल गए?"
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: कक्ष सेटिंग्स
-      update: अद्यतन कक्ष
-      client: क्लाइंट प्रकार का चयन करें
-      mute: जब वे जुड़ते हैं तो उपयोगकर्ताओं को म्यूट करें
-      default: डिफोल्ट
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: अपने कमरे में समायोजन किसी भी समय किया जा सकता है
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: एक नया कमरा नाम दर्ज करें ...
-  name_update_success: कमरे का नाम सफलतापूर्वक बदल गया!
-  no_user_email_exists: निर्दिष्ट ईमेल के साथ कोई मौजूदा उपयोगकर्ता नहीं है। कृपया सुनिश्चित करें कि आपने इसे सही तरीके से टाइप किया है।
-  omniauth_error: ओम्निथ के साथ प्रमाणित करते समय एक त्रुटि हुई। कृपया पुनः प्रयास करें या किसी व्यवस्थापक से संपर्क करें!
-  password: "पासवर्ड "
-  password_empty_notice: पासवर्ड खाली नहीं हो सकता
-  password_reset_success: पासवर्ड रीसेट कर दिया गया है।
-  password_different_notice: पासवर्ड की पुष्टि मेल नहीं खाती।
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
+  pagy:
+    nav:
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      gap: "&hellip;"
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
-    google: गूगल
-    microsoft_office365: ऑफिस 365
-    twitter: ट्विटर
+    google: Google
+    microsoft_office365: Office 365
+    twitter: Twitter
+  recaptcha:
+    errors:
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    email: ईमेल रिकॉर्डिंग
-    no_recordings: "1%{inject} इस कमरे में कोई रिकॉर्डिंग नहीं है।"
-    no_user_recordings: वर्तमान में आपके पास कोई रिकॉर्डिंग नहीं है।
-    no_matched_recordings: "1%{inject} कोई रिकॉर्डिंग आपकी खोज से मेल नहीं खाती।"
-    recorded_on: "1%{date} पर रिकॉर्ड किया गया"
+    all_recordings: All Recordings
+    email: Email Recording
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: नाम
-      thumbnails: थंबनेल
-      length: लंबाई
-      users: उपयोगकर्ता
-      visibility: दृश्यता
-      formats: प्रारूप
+      name: Name
+      thumbnails: Thumbnails
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: जनता
-      unlisted: " लिस्ट में नहीं है "
-  rename: नाम बदलें
+      public: Public
+      unlisted: Unlisted
+    format:
+      presentation: Presentation
+  registration:
+    approval: 
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
+    banned:
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+    invite:
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: पासवर्ड रीसेट
-    password: नया पासवर्ड
-    confirm: नया पासवर्ड पुष्टि
-    update: पासवर्ड अपडेट करें
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
+  roles:
+    administrator: Administrator
+    banned: Banned
+    pending: Pending
+    super_admin: Super Admin
+    user: User
   room:
-    create_room_error: कमरा बनाते समय एक त्रुटि हुई
-    create_room_success: कक्ष सफलतापूर्वक बनाया गया
-    invited: आपको शामिल होने के लिए आमंत्रित किया गया है
-    invite_participants: प्रतिभागियों को आमंत्रित करें
-    join: शामिल हों
-    last_session: "अंतिम सत्र 1%{session}"
-    owner: मालिक
-    no_sessions: "इस कमरे में कोई सत्र नहीं है, फिर भी!"
-    recordings: रिकॉर्डिंग
-    sessions: सत्र
-    settings: कक्ष सेटिंग्स
-    start: शुरु
-    unavailable: "ओनर का ईमेल वेरीफाई नहीं हुआ है इसी लिए यह कमरा उपलभ्त नहीं है "
-    update_settings_error: कमरे की सेटिंग को अपडेट करने में एक त्रुटि हुई
-    update_settings_success: कक्ष सेटिंग सफलतापूर्वक अपडेट की गईं
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: बैठक अभी तक शुरू नहीं हुई है।
-      auto: मीटिंग शुरू होने पर आप स्वचालित रूप से शामिल हो जाएंगे।
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: पूरा नाम
-      language: भाषा
-      provider: प्रदाता
-      image: छवि
-      image_url: प्रोफ़ाइल छवि URL
-      subtitle: अपने खाते की जानकारी अपडेट करें
-      title: खाता जानकारी
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: "हां, मैं अपना खाता हटाना चाहूंगा।"
-      disclaimer: "यदि आप अपना खाता हटाना चाहते हैं, तो यह पुनर्प्राप्त करने योग्य <b>नहीं </b>होगा। सेटिंग्स, कमरे और रिकॉर्डिंग सहित आपके खाते से संबंधित सभी जानकारी हटा दी जाएगी।"
-      subtitle: अपना खाता स्थायी रूप से हटाएं
-      title: खाता हटा दो
-    design:
-      not_supported: वर्तमान में कस्टमाइज़ेशन समर्थित नहीं है।
-      subtitle: ग्रीनलाइट को अनुकूलित करें
-      title: डिज़ाइन
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: नया पासवर्ड पुष्टि
-      new: नया पासवर्ड
-      old: पुराना पासवर्ड
-      subtitle: अपना पासवर्ड बदलें
-      title: पासवर्ड
-    title: सेटिंग्स
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: पासवर्ड पुष्टि
-    subtitle: खाता बनाएं
-    title: साइन अप करें
-    with: "इसके साथ साइन अप करें 1%{provider}"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: "मैं स्वीकारता हूँ 1%{href}"
-    accept_existing: मुझे नियम व शर्तें मंजूर हैं
-    title: नियम और शर्तें
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    यह परिनियोजन पूर्व-कॉन्फ़िगर किए गए परीक्षण सर्वर का उपयोग कर रहा है, आपको इसे अपने से बदलना चाहिए। जानकारी के लिए, देखें। 1%{href}.
-  update: अद्यतन करें
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: सत्यापित करें
-    activated: खाता सत्यापित!
-    already_verified: खाता पहले ही सत्यापित किया जा चुका है
-    invalid: अमान्य सत्यापन लिंक
-    not_verified: आपका खाता अभी तक सत्यापित नहीं किया गया है।
-    resend: सत्यापन ईमेल पुनः भेजे
-    signin: कृपया अपने खाते तक पहुंचने के लिए प्रवेश करें।
-    title: अपना ई मेल सत्यापित करें
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
+    verification: Verification

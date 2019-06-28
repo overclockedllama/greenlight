@@ -16,232 +16,383 @@
 
 # Locale.
 
-ar:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "الأحكام والشروط"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: عفوًا ، حدث خطأ عند بدء الاجتماع
-  cancel: إلغاء
+        accepted_terms: "Terms and Conditions"
+  administrator:
+    site_settings:
+      authentication:
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to Greenlight to join this room
+      branding:
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
+      color:
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
+        regular: Regular
+        lighten: Lighten
+        Darken: Darken
+      registration:
+        info: Change the way that users register to the website
+        title: Registration Method
+        methods:
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
+    flash:
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
+    users:
+      invite: Invite User
+      edit:
+        title: Edit User Details
+      settings:
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
+      table:
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
+        username: Username
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode VLE
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: ملفات تعريف الارتباط تساعدنا على تقديم خدماتنا. باستخدام خدماتنا ، أنت توافق على استخدامنا لملفات تعريف الارتباط.
-    cookie_button: أنا موافق
-  copy: نسخ
-  delete: حذف
-  delivery_error: حدث خطأ أثناء تسليم البريد الإلكتروني. يرجى الاتصال بمسؤول!
-  docs: موثقات
-  email: البريد الإلكتروني
-  email_sent: أرسل البريد الإلكتروني! (يرجى التحقق من مجلد البريد العشوائي إذا لم تستلمه)
-  enter_your_name: أدخل أسمك!
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
+  copied: Copied
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
+  email: Email
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
+    bigbluebutton:
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: أوه لا! يبدو أن هناك خطأ ما من جانبنا.
-      help: لقد تم تسجيل الخطأ ، سنلقي نظرة!
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: إذا لم تكن مسؤولاً ، الرجاء الاتصال بأحد المسؤولين.
-      continue: أود أن أبقى في استخدام 1.0.
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        واجه Greenlight خطأ في ترحيل قاعدة البيانات. <br>قد يكون هذا بسبب عدم تحديثك إلى Greenlight 2.0.
-      upgrade: أرني كيفية الترقية إلى 2.0!
-      version: لقد أصدرنا إصدارًا جديدًا من Greenlight ، لكن قاعدة البيانات غير متوافقة.
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
+    messages:
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: أووه! يبدو أننا لا نستطيع العثور على ذلك.
-      help: هل من الممكن حذفه؟
-    title: أخطاء
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
+    unauthorized:
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
     unprocessable:
-      message: أووه! الطلب غير قابل للإجراء.
-      help: للأسف ، هذا ليس طلبًا صحيحا.
-  expired_reset_token: انتهت صلاحية رابط إعادة تعيين كلمة المرور!
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: الميزات
-    rooms: غرف معدلة
-    recordings: إدارة التسجيل
-    designs: تصاميم مخصصة
-    authentication: مصادقة المستخدم
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "مشغل بواسطة%{href}."
+    powered_by: Powered by %{href}.
   forgot_password:
-    subtitle: هل نسيت كلمة المرور
-    email: البريد الإلكتروني
-    submit: خضع
-  go_back: عودة
+    subtitle: Forgot Password
+    email: Email
+    submit: Submit
+  go_back: Go back
   greenlight: Greenlight
   header:
-    create_room: إنشاء غرفة
+    all_recordings: All Recordings
     dropdown:
-      help: تحتاج مساعدة؟
-      home: غرفة الإستقبال
-      settings: إعدادات
-      signout: خروج
-  home_room: غرفة الإستقبال
-  info_update_success: تحديث المعلومات بنجاح.
-  invalid_user: فشل تسجيل الدخول بسبب عدم العثور على المستخدم. هل أنت متأكد من أن حساب البريد الإلكتروني صحيح؟
-  invalid_credentials: فشل الدخول بسبب بيانات الاعتماد غير الصالحة. هل أنت متأكد من أنك أدخلتهم بشكل صحيح؟
-  invalid_login_method: فشل تسجيل الدخول بسبب عدم تطابق الحساب. تحتاج إلى تسجيل الدخول مع omniauth.
-  invite_message: "لدعوة شخص ما إلى الاجتماع ، أرسل لهم هذا الرابط:"
+      account_settings: Organization
+      help: Need help?
+      home: Home
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: 'لقد تمت دعوتك لمشاهدة تسجيل.'
-        body: 'لمشاهدة التسجيل ، اتبع الرابط أدناه:'
-        autogenerated: 'يتم إنشاء هذا البريد الإلكتروني تلقائيًا بواسطة BigBlueButton.'
-        footer: 'BigBlueButton هو نظام مؤتمرات ويب مفتوح المصدر. لمزيد من المعلومات حول BigBlueButton ، راجع https://bigbluebutton.org/.'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
+        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "  Greenlight واجهة أمامية بسيطة لخادم المؤتمرات عبر الإنترنت الخاص بك%{href}. يمكنك إنشاء غرفك الخاصة لاستضافة الجلسات ، أو الانضمام إلى الآخرين باستخدام رابط قصير وملائم."
-    welcome: مرحبًا بك في<span class="green-grad">Greenlight</span>.
-    video: شاهد برنامجنا التعليمي حول استخدام Greenlight
-    upgrade: أرني كيفية الترقية إلى 2.0!
-    version: لقد أصدرنا إصدارًا جديدًا من Greenlight ، لكن قاعدة البيانات غير متوافقة.
-  language_name: العربية
-  language_default: الافتراضي (لغة المتصفح)
-  ldap_error: غير قادر على الاتصال بخادم LDAP. يرجى التحقق من تكوين LDAP في ملف env والتأكد من تشغيل خادمك.
-  login: الدخول
+    about: "Welcome to GoCode Academy VLE. To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: Watch our tutorial for students on using the online platform. 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
+      approve:
+        info: Your account has been approved.
+        signin: To access your personal rooms, click the button below and sign in.
+        signin_link: Sign In
+        signup:
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
+      demoted:
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
+      invite:
+        info: You have been invited to your own personal space by %{name}
+        signup: To signup using your email, click the button below and follow the steps.
+        signup_link: Sign Up
+        signup:
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: 'إعادة تعيين كلمة المرور'
-        welcome: "يبدو أنك نسيت كلمة المرور الخاصة بك %{bigbluebutton}"
-        message: 'إذا كان هذا صحيحًا ، فالرجاء النقر على الرابط أدناه لإعادة تعيين كلمة المرور الخاصة بك:'
-        reset_link: إعادة تعيين كلمة المرور
-        expire: سوف ينتهي هذا الرابط خلال ساعتين.
-        ignore: يمكنك تجاهل رسالة البريد الإلكتروني هذه بأمان إذا لم تطلب إعادة تعيين كلمة المرور.
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
+      promoted:
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "مرحبا بك في %{bigbluebutton}, %{name}!"
-        success: " لقد سجلت حسابك %{bigbluebutton} بنجاح. اسم المستخدم الخاص بك هو %{email}."
-        verify: للتحقق من حسابك ، فقط اضغط على الزر أدناه.
-        verify_text: 'للتحقق من حسابك ، فقط اتبع هذا الرابط: %{url}'
-        verify_link: التحقق من الحساب
-        thanks: شكرا لانضمامك وتمضية يوم موفق!
-  max_concurrent: تم الوصول إلى الحد الأقصى لعدد الجلسات المتزامنة المسموح بها!
+        welcome: Welcome to your personal space, %{name}!
+        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: انضم إلي تلقائيا في الغرفة.
-      free_delete: سيكون لك مطلق الحرية في حذف هذه الغرفة في أي وقت.
-      name_placeholder: أدخل اسم الغرفة ...
-      not_blank: لا يمكن ترك اسم الغرفة فارغًا.
-      title: قم بإنشاء غرفة جديدة
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: هل انت متأكد انك تريد حذف حسابك؟
-      delete: أنا متأكد من حذف حسابي.
-      keep: في الواقع ، سأحافظ عليه.
-      warning: هذا القرار نهائي.<b>لن</b> تكون قادرًا على استعادة البيانات المرتبطة.
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "هل أنت متأكد أنك تريد حذف %{room}؟"
-      delete: أنا متأكد من حذف هذه الغرفة.
-      keep: "On second thought, I'll keep it."
-      warning: <b>لن</b> تتمكن من استعادة هذه الغرفة أو أي من التسجيلات المرتبطة بها.
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
+    invite_user:
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: أو
-      with: "الدخول بـ %{provider}"
-      forgot_password: هل نسيت كلمة المرور؟
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: إعدادات الصالون
-      update: تحديث الصالون
-      client: اختر نوع العميل
-      mute: كتم المستخدمين عند الانضمام
-      default: افتراضي
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: يمكن إجراء التعديل في صالونك في أي وقت.
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: أدخل اسم صالون جديد ...
-  name_update_success: تم تغيير اسم الصالون بنجاح!
-  no_user_email_exists: لا يوجد مستخدم حالي بالبريد الإلكتروني المحدد. يرجى التأكد من كتابته بشكل صحيح.
-  omniauth_error: حدث خطأ أثناء المصادقة مع omniauth. يرجى المحاولة مرة أخرى أو الاتصال بمسؤول!
-  password: كلمه السر
-  password_empty_notice: لا يمكن أن تكون كلمة المرور فارغة.
-  password_reset_success: تم إعادة تعيين كلمة المرور.
-  password_different_notice: تأكيد كلمة المرور غير متطابق.
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
+  pagy:
+    nav:
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      gap: "&hellip;"
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
     google: Google
     microsoft_office365: Office 365
     twitter: Twitter
+  recaptcha:
+    errors:
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    email: " البريد الإلكتروني للتسجيل"
-    no_recordings: "لا تحتوي هذه الغرفة على أي من%{inject} التسجيلات.."
-    no_user_recordings: ليس لديك حاليًا أي تسجيلات.
-    no_matched_recordings: "لا يوجد تسجيلات %{inject} تطابق بحثك."
-    recorded_on: "تم التسجيل في %{date}"
+    all_recordings: All Recordings
+    email: Email Recording
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: الإسم
-      thumbnails: الصورة المصغرة
-      length: الطول
-      users: المستخدمين
-      visibility: الرؤية
-      formats: الصيغة
+      name: Name
+      thumbnails: Thumbnails
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: عامة
-      unlisted: غير مدرج
-  rename: إعادة تسمية
+      public: Public
+      unlisted: Unlisted
+    format:
+      presentation: Presentation
+  registration:
+    approval: 
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
+    banned:
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+    invite:
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: إعادة تعيين كلمة المرور
-    password: كلمة السر الجديدة
-    confirm: تأكيد كلمة السر الجديدة
-    update: تحديث كلمة السر
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
+  roles:
+    administrator: Administrator
+    banned: Banned
+    pending: Pending
+    super_admin: Super Admin
+    user: User
   room:
-    create_room_error: حدث خطأ أثناء إنشاء الصالون
-    create_room_success: تم إنشاء الصالون بنجاح
-    invited: لقد تمت دعوتك للانضمام
-    invite_participants: دعوة المشاركين
-    join: انضم
-    last_session: "الجلسة الأخيرة في %{session}"
-    owner: مالك
-    no_sessions: "ما زالت, لا تحتوي هذه الغرفة على جلسات."
-    recordings: التسجيلات
-    sessions: جلسات
-    settings: إعدادات الغرفة
-    start: بداية
-    unavailable: هذه الصالون غير متاح حاليًا نظرًا لعدم التحقق من البريد الإلكتروني للمالك.
-    update_settings_error: حدث خطأ أثناء تحديث إعدادات الصالون
-    update_settings_success: تم تحديث إعدادات الصالون بنجاح
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: آسف! لم يبدأ الاجتماع بعد.
-      auto: ستنضم تلقائيًا عندما يبدأ الاجتماع.
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: الاسم الكامل
-      language: لغة
-      provider: مزود
-      image: صورة
-      image_url: عنوان URL لصورة الملف الشخصي
-      subtitle: قم بتحديث معلومات حسابك
-      title: معلومات الحساب
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: نعم ، أرغب في حذف حسابي.
-      disclaimer: إذا اخترت حذف حسابك . <b>لا</b> يمكن استرداده. ستتم إزالة جميع المعلومات المتعلقة بحسابك ، بما في ذلك الإعدادات والغرف والتسجيل.
-      subtitle: "حذف حسابك بشكل دائم "
-      title: حذف الحساب
-    design:
-      not_supported: التخصيص غير مدعوم حاليًا.
-      subtitle: تخصيص Greenlight
-      title: التصميم
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: تأكيد كلمة السر الجديدة
-      new: كلمة السر الجديدة
-      old: كلمة السر القديمة
-      subtitle: غير كلمة السر الخاصة بك
-      title: كلمه السر
-    title: إعدادات
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: تأكيد كلمة السر
-    subtitle: انشئ حساب
-    title: اشتراك
-    with: "اشترك عن طريق %{provider}"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: أوافق على الشروط والأحكام.
-    accept_existing: أوافق على الشروط والأحكام
-    title: الأحكام والشروط
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    يستخدم هذا النشر خادم اختبار تمت تهيئته مسبقًا ، ويجب استبداله بخادمك الشخصي. لمزيد من التفاصيل ، اطلع على%{href} .
-  update: تحديث
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: التحقق
-    activated: تم التحقق من الحساب!
-    already_verified: تم التحقق من الحساب بالفعل
-    invalid: رابط التحقق غير صحيح
-    not_verified: لم يتم التحقق من حسابك بعد.
-    resend: إعادة ارسال بريد التحقق
-    signin: الرجاء تسجيل الدخول للوصول إلى حسابك.
-    title: قم بتأكيد بريدك الألكتروني
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
+    verification: Verification

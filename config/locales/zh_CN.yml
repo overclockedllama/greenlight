@@ -16,381 +16,383 @@
 
 # Locale.
 
-zh_CN:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "协议和条款"
+        accepted_terms: "Terms and Conditions"
   administrator:
     site_settings:
       authentication:
-        disabled: 禁用
-        enabled: 启用
-        info: 仅允许经过身份验证的用户加入会议室
-        title: 要求对会议室进行身份验证
-        user-info: 你必须登录Greenlight才能加入这个会议室
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to Greenlight to join this room
       branding:
-        change: 修改品牌形象
-        info: 更改左上角显示的网站标志
-        placeholder: 品牌形象URL地址
-        title: 网站标志
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
       color:
-        info: 改变常规颜色将同时更改明暗。可以单独更改变亮和变暗。
-        title: 主颜色
-        regular: 常规
-        lighten: 变亮
-        Darken: 变暗
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
+        regular: Regular
+        lighten: Lighten
+        Darken: Darken
       registration:
-        info: 更改用户在网站注册的方式
-        title: 注册方式
+        info: Change the way that users register to the website
+        title: Registration Method
         methods:
-          approval: 批准/拒绝
-          invite: 邀请加入
-          open: 开放式注册
-      subtitle: 自定义Greenlight
-      title: 网站设置
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
     flash:
-      approved: 已成功批准用户。
-      banned: 已成功禁止用户。
-      unbanned: 已成功取消对用户的禁止。
-      delete: 已成功删除用户
-      delete_fail: 删除用户失败
-      demoted: 用户已成功降级
-      invite: "邀请成功发送到 %{email}"
-      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS 必须设置为true才能使用此方法
-      promoted: 用户已成功升级
-      registration_method_updated: 注册方法已成功更新
-      settings: 已成功更改网站设置
-      unauthorized: 您无权对此用户执行操作
-    title: 全局设置
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
     users:
-      invite: 邀请用户
+      invite: Invite User
       edit:
-        title: 编辑用户详细信息
+        title: Edit User Details
       settings:
-        ban: 禁止用户
-        delete: 删除
-        demote: 降级为普通用户
-        edit: 编辑
-        promote: 提升为管理员
-        unban: 取消禁止用户
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
       table:
-        authenticator: 认证方式
-        created: 创建于
-        name: 名字
-        not_found: 没有与您的搜索匹配的用户
-        no_users: 没有找到用户
-        role: 角色
-        uid: 用户ID
-        username: 用户名
-      title: 管理用户
-  add_to_google_calendar: "添加到谷歌日历"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: 哎呀，启动会议出错！
-  cancel: 取消
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
+        username: Username
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode VLE
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: Cookies帮助我们提供服务。您同意我们使用cookies才能使用这些服务。
-    cookie_button: 我同意
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
   copied: Copied
-  copy: 复制
-  default_admin: "您仍在使用此帐户的默认密码。 请点击 <a href=\"%{edit_link}\">这里</a> 修改。"
-  delete: 删除
-  delivery_error: 电子邮件传递过程中出错。请联系管理员！
-  docs: 文档
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
   email: Email
-  email_sent: "您的 %{email_type} 邮件已经发送！（如果您没有收到邮件，请检查您的垃圾邮件文件夹）"
-  enter_your_name: 输入您的名字！
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
     bigbluebutton:
-      help: "请确保采取了正确的步骤. <a href=\"%{doc_link}\">了解更多信息</a>"
-      message: BigBlueButton的Endpoint 和Secret无效
-      title: 服务器错误
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: 哎呀，看起来服务器内部出错了！
-      help: 错误信息已经记录了，我们会检查一下!
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: 请联系管理员。
-      continue: 还是继续使用 1.0吧。
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        Greenlight 遇到数据库迁移错误。<br>可能因为您还没有更新到 Greenlight 2.0。
-      upgrade: 告诉我如何升级到 2.0!
-      version: 我们已经发布了新版Greenlight，但您的数据库不兼容。
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
     messages:
-      blank: 不能是空白的
-      too_short: 太短了
-      invalid: 无效
-      taken: 已经有人用了
-      accepted: 必须同意
-      confirmation: "不匹配%{attribute}"
-      inclusion: 列表中不存在
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: 哎哟！看来我们找不到它了。
-      help: 它有可能被移除了吗？
-    title: 错误
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
     unauthorized:
-      message: 您无权访问此应用程序
-      help: 如果您认为这是一个错误，请联系您的系统管理员。
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
     unprocessable:
-      message: 哎呀！请求无法处理。
-      help: 这不是有效的请求。
-  expired_reset_token: 密码重置链接已过期！
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: 功能
-    rooms: 个人会议室
-    recordings: 录像管理
-    designs: 定制设计
-    authentication: 用户认证
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "Powered by%{href}"
+    powered_by: Powered by %{href}.
   forgot_password:
-    subtitle: 忘记密码
+    subtitle: Forgot Password
     email: Email
-    submit: 提交
-  go_back: 返回
+    submit: Submit
+  go_back: Go back
   greenlight: Greenlight
   header:
-    all_recordings: 所有录像
+    all_recordings: All Recordings
     dropdown:
-      account_settings: 全局设置
-      help: 帮助
-      home: 首页
-      settings: 个人设置
-      signout: 退出
-  home_room: 首页会议室
-  info_update_success: 信息更新成功。
-  invalid_user: 由于找不到用户，登录失败。您确定电子邮件帐户是正确的吗？
-  invalid_credentials: 登录失败。输入有误？
-  invalid_login_method: 由于帐户不匹配，登录失败。您需要使用Omniauth登录。
-  invite_message: "邀请他人参加会议，请发送以下链接："
+      account_settings: Organization
+      help: Need help?
+      home: Home
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: '已邀请您查看录像'
-        body: '要查看录像，请点击以下链接：'
-        autogenerated: '此电子邮件由BigBlueButton自动生成。'
-        footer: 'BigBlueButton是一个开源的Web会议系统。有关BigBlueButton的更多信息，请参阅https://bigBlueButton.org/。'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
+        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "%{href} 是开源Web会议服务器BigBluebutton的简易前端。我们可以创建并主持会议，或通过链接加入其他会议。"
-    welcome: 欢迎来到BigBlueButton在线会议系统
-    video: 请看使用说明
-    upgrade: 告诉我怎么升级到 2.0!
-    version: 我们发布了新版Greenlight，但你的数据库不兼容。
-  language_name: 简体中文
-  language_default: 默认（浏览器语言）
-  ldap_error: 无法连接到LDAP服务器，请在env文件中检查LDAP配置，还要确保服务已经启动。
-  login: 登录
-  login_title: 登录到您的帐户
+    about: "Welcome to GoCode Academy VLE. To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: Watch our tutorial for students on using the online platform. 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
       approve:
-        info: 您的帐户已被批准。
-        signin: 要访问您的私人会议室，请单击下面的按钮并登录。
-        signin_link: 登录
+        info: Your account has been approved.
+        signin: To access your personal rooms, click the button below and sign in.
+        signin_link: Sign In
         signup:
-          info: 一个新用户已注册使用Greenlight。
-          more-info: 若要允许此用户访问greenlight，您必须在“组织设置”中批准其帐户。
-          admins_link: 访问组织页面
-          subject: 新Greenlight用户注册 
-          username: "用户注册了名称 %{name} 和电子邮箱 %{email}."
-        subject: 帐户已批准
-        username: "您的用户名是 %{email}."
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
       demoted:
-        info: "您不再是 %{url}的管理员."
-        more-info: 您现在拥有与普通用户相同的权限，将无法再访问任何管理员设置。
-        root_link: 访问组织页面
-        subtitle: 管理人权利被撤销了
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
       invite:
-        info: "您被%{name}邀请到您自己的私人空间 "
+        info: You have been invited to your own personal space by %{name}
         signup: To signup using your email, click the button below and follow the steps.
-        signup_link: 注册
+        signup_link: Sign Up
         signup:
-          info: 被邀请的用户已注册使用greenlight。
-          admins_link: 访问组织页面
-          subject: 新Greenlight用户注册 
-          username: "用户注册了名称%{name} 和电子邮箱 %{email}."
-        subject: 邀请加入 BigBlueButton
-        username: "您的用户名是 %{email}."
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: '重置密码'
-        welcome: "好像您忘了%{bigbluebutton}的密码"
-        message: '如属实，请单击下面的链接重置密码：'
-        reset_link: 重置密码
-        expire: 此链接将在两小时后过期。
-        ignore: 如果您没有请求密码重置，安全的做法是忽略此电子邮件。
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
       promoted:
-        admins_link: 访问组织页面
-        info: "您现在是 %{url}的管理员了."
-        more-info: 作为管理员，您可以通过更改徽标和品牌颜色来管理用户及其角色并配置站点设置。
-        subtitle: 管理员权利已授权
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "欢迎来到您的个人空间，%{name}！"
-        success: "使用%{bigbluebutton}，您可以创建私有会议室来主持会议并与其他人协作。"
-        username: "您的用户名是%{email}。"
-        verify: 要验证您的帐户，只需单击下面的按钮。
-        verify_text: '要验证您的帐户，只需点击以下链接：%{url}'
-        verify_link: 验证帐户
-        thanks: 感谢您的加入，祝您拥有美好的一天！
-  max_concurrent: 已达到允许的最大并发会话数！
+        welcome: Welcome to your personal space, %{name}!
+        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: 自动进入会议室
-      create: 创建会议室
-      free_delete: 任何时候都可以删除这个会议室
-      name_placeholder: 这里请输入会议室名称...
-      not_blank: 会议室名称不能为空
-      title: 创建新的会议室
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: 确实要删除此帐户吗？
-      delete: 我确定要删除这个帐户。
-      keep: 我还是留着吧。
-      warning: 这是最终决定，您将<b>无法</b>恢复相关数据。
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "确定要删除%{room}吗?"
-      delete: 我确定删除这个会议室
-      keep: 我还是留着它吧
-      warning: "您将 <b>不能</b> 恢复这个会议室或任何跟 %{recordings_num} 相关的录像。"
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
     invite_user:
-      email_placeholder: 输入用户的电子邮件
-      footer: 用户将收到一封电子邮件，其中包含如何注册的说明。
-      send: 发送邀请
-      title: 邀请用户
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: 或
-      with: "通过 %{provider}登录"
-      forgot_password: 忘记密码？
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: 会议室设置
-      update: 修改会议室
-      client: 选择客户端类型
-      mute: 用户加入时静音
-      default: 默认
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: 您可以随时调整会议室
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: 这里请输入新会议室名称…
-  name_update_success: 会议室名称修改成功！
-  no_user_email_exists: 没有指定电子邮件的现有用户。请确保输入正确。
-  omniauth_error: 与omniauth进行身份验证时出错。请再试一次，或与管理员联系！
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
   pagy:
     nav:
-      prev: "&lsaquo; 上一页"
-      next: "下一页 &rsaquo;"
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
       gap: "&hellip;"
-  password: 密码
-  password_empty_notice: 密码不能为空。
-  password_reset_success: 密码已重置。
-  password_different_notice: 两次新密码不一致。
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
     google: Google
     microsoft_office365: Office 365
     twitter: Twitter
   recaptcha:
     errors:
-      recaptcha_unreachable: 哎呀，我们未能验证您的reCAPTCHA 响应。请再试一次。
-      verification_failed: reCAPTCHA 验证失败，请再试一次。
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    all_recordings: 所有录像
-    email: 通过Email发送录像
-    no_recordings: "这个会议室没有%{inject}录像"
-    no_user_recordings: 您当前没有录像。
-    no_matched_recordings: "没有搜索到 %{inject} 录像"
-    recorded_on: "录制于%{date}"
+    all_recordings: All Recordings
+    email: Email Recording
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: 名字
-      thumbnails: 预览图
-      length: 长度
-      users: 用户数
-      visibility: 可见性
-      formats: 格式
+      name: Name
+      thumbnails: Thumbnails
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: 公开
-      unlisted: 隐藏
+      public: Public
+      unlisted: Unlisted
     format:
-      presentation: 演示
+      presentation: Presentation
   registration:
     approval: 
-      fail: 您的帐户尚未批准。如果您注册后已过多天，请与管理员联系。
-      signup: 您的帐户已成功创建。它已发送给管理员审批。
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
     banned:
-      fail: 您没有访问此应用程序的权限。如果您认为这是一个错误，请联系您的管理员。 
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
     invite:
-      fail: 您的令牌无效或已过期。如果您认为这是一个错误，请联系您的管理员。
-      no_invite: 您没有被邀请加入。请联系管理员申请邀请。
-  rename: 重命名
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: 重置密码
-    password: 新密码
-    confirm: 再次输入新密码
-    update: 更新密码
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
   roles:
-    administrator: 管理员
+    administrator: Administrator
     banned: Banned
-    pending: 待定
-    super_admin: 超级管理员
-    user: 用户
+    pending: Pending
+    super_admin: Super Admin
+    user: User
   room:
-    create_room: 创建会议室
-    create_room_error: 创建会议室出错
-    create_room_success: 会议室创建成功
-    invited: 您已被邀请加入
-    invite_participants: 邀请参与者的链接
-    join: 加入
-    last_session: "上一次会议%{session}"
-    owner: 主持人
-    no_sessions: 会议室从未使用！
-    recordings: 会议录像
-    sessions: 会议
-    settings: 会议室设置
-    start: 开始
-    unavailable: 由于未验证所有者的电子邮件，此会议室当前不可用。
-    update_settings_error: 修改会议室设置出错
-    update_settings_success: 会议室设置修改成功
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: 哎呀！会议还没开始呢。
-      auto: 会议开始后您将自动进入
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: 全名
-      language: 语言
-      provider: 应用平台
-      image: 头像
-      image_url: 个人头像URL
-      subtitle: 更新帐户信息
-      title: 帐户信息
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: 我确定要删除我的帐户
-      disclaimer: 删除帐户后<b>无法</b>恢复。帐户所有相关信息都会被移除，包括设置、会议室和录像。
-      subtitle: 永久删除您的帐户
-      title: 删除帐户
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: 再次输入新密码
-      new: 新密码
-      old: 旧密码
-      subtitle: 修改密码
-      title: 密码
-    title: 个人设置
-    search: 搜索
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: 重复输入新密码
-    subtitle: 创建帐户
-    title: 注册
-    with: "通过%{provider}注册"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: "我同意%{href}"
-    accept_existing: 我接受协议和条款。
-    title: 协议和条款
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    此部署使用的是预配置的测试服务器，您应该用自己的服务器来替换它。 详细信息请看 %{href}。
-  update: 更新
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: 验证
-    activated: 帐户验证成功！
-    already_verified: 帐户已经验证过了
-    invalid: 无效的验证链接
-    not_verified: 您的帐户尚未验证。
-    resend: 重新发送验证电子邮件
-    signin: 请登录以访问您的帐户。
-    title: 验证您的电子邮箱
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
     verification: Verification

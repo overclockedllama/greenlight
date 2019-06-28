@@ -16,381 +16,383 @@
 
 # Locale.
 
-fa_IR:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "شرایط و قوانین"
+        accepted_terms: "Terms and Conditions"
   administrator:
     site_settings:
       authentication:
-        disabled: غیرفعال شده
-        enabled: فعال شده
-        info: تنها به کاربران احراز هویت شده اجازه پیوستن به اتاق را بده
-        title: نیازمند احراز هویت برای اتاق ها
-        user-info: شما می بایست برای پیوستن به این اتاق وارد گرین لایت شوید
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to Greenlight to join this room
       branding:
-        change: تغییر تصویر
-        info: تغییر تصویر شخصی سازی که در گوشه بالای سمت چپ به نمایش در می آید
-        placeholder: ادرس تصویر ...
-        title: تصویر شخصی سازی
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
       color:
-        info: تغییر مرتب رنگ هم میزان روشنایی و هم میزان تاریکی را تغییر می دهد. روشنایی و تاریکی به صورت مجزا می توانند تغییرکنند.
-        title: رنگ اصلی
-        regular: منظم
-        lighten: روشن تر
-        Darken: تاریک تر
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
+        regular: Regular
+        lighten: Lighten
+        Darken: Darken
       registration:
-        info: تغییر روشی که کاربران در وب سایت ثبت نام میکنند
-        title: روش تبت نام
+        info: Change the way that users register to the website
+        title: Registration Method
         methods:
-          approval: تایید/رد
-          invite: پیوستن توسط دعوت نامه
-          open: باز کردن ثبت نام
-      subtitle: شخصی سازی گرینلایت
-      title: تنظیمات سایت
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
     flash:
-      approved: کاربر با موفقیت تایید شد
-      banned: کاربر با موفقیت منع شد
-      unbanned: کاربر با موفقیت رفع ممنوعیت شد.
-      delete: کاربر با موفقیت حذف شد
-      delete_fail: حذف کاربر با خطا مواجه شد
-      demoted: کاربر با موفقیت تغییر نقش داده شد
-      invite: "دعوت نامه با موفقیت به %{email} ارسال شد "
-      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS می بایست فعال شود تا بتوانید از این روش کنید
-      promoted: کاربر با موفقیت ارتقا نقش داده شد
-      registration_method_updated: روش ثبت نام با موفقیت به روز رسانی شد
-      settings: تنظیمات سایت با موفقیت تغییر یافت
-      unauthorized: شما مجاز به انجام این عمل روی این کاربر نیستید
-    title: تنظیمات سازمان
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
     users:
-      invite: دعوت کاربر
+      invite: Invite User
       edit:
-        title: ویرایش جزئیات کاربر
+        title: Edit User Details
       settings:
-        ban: منع کردن کاربر
-        delete: حذف
-        demote: تغییر نقش به کاربر عادی
-        edit: ویرایش
-        promote: ارتقا به مدیر
-        unban: رفع ممنوعیت کاربر
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
       table:
-        authenticator: احراز کننده هویت
-        created: ایجاد شده
-        name: نام
-        not_found: کاربری متناسب با جستجوی شما یافت نشد
-        no_users: کاربری یافت نشد
-        role: نقش
-        uid: شناسه کاربری
-        username: نام کاربری
-      title: مدیریت کاربران
-  add_to_google_calendar: "افزودن تقویم گوگل"
-  bigbluebutton: بیگ بلو باتن
-  bigbluebutton_exception: اوپس، خطایی در هنگام شروع جلسه رخ داده است!
-  cancel: لغو
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
+        username: Username
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode VLE
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: کوکی ها به ما کمک میکنند تا خدمات خود را ارائه دهیم. با استفاده از این خدمات، شما با استفاده از کوکی های ما موافقت میکنید.
-    cookie_button: موافق هستم
-  copied: کپی شد
-  copy: کپی
-  default_admin: "شما هنوز از رمز عبور پیش فرض استفاده میکنید. لطفا برای تغییر آن <a href=\"%{edit_link}\"> اینجا </a> را کلیک کنید"
-  delete: حذف
-  delivery_error: خطایی در هنگام تحویل ایمیل رخ داده است، لطفا با مدیر تماس بگیرید!
-  docs: مستند سازی
-  email: ایمیل
-  email_sent: "%{email_type} ایمیل شما ارسال شد! (لطفا در صورت عدم دریافت آن پوشه اسپم خود را بررسی کنید)"
-  enter_your_name: نام خود را وارد کنید!
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
+  copied: Copied
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
+  email: Email
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
     bigbluebutton:
-      help: "لطفا مطمئن شوید که قدم های درست برداشته شده اند.<a href=\"%{doc_link}\"> بیشتر بیاموزید</a>"
-      message: ادرس و رمز نادرست بیگ بلو باتن
-      title: خطای سرور
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: اوه نه! گویا خطایی سمت ما رخ داده است.
-      help: خطا لاگ شده است، ما نگاهی به آن خواهیم انداخت!
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: اگر شما مدیر نیستید، لطفا با یک مدیر تماس بگیرید.
-      continue: ما تمایل به ماندن در نسخه 1.0 را دارم.
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        خطایی در انتقال دیتابیس گرین لایت رخ داده است. <br> این ممکن است به دلیل این باشد که شما به نسخه 2.0 گرین لایت به روز رسانی نکرده اید.
-      upgrade: به من نشان بده چگونه به نسخه 2.0 به روز رسانی کنم!
-      version: ما یک نسخه جدید از گرین لایت را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
     messages:
-      blank: نمیتواند خالی باشد
-      too_short: بسیار کوتاه است
-      invalid: معتبر نیست
-      taken: از قبل گرفته شده است
-      accepted: میبایست تایید شود
-      confirmation: "با %{attribute} تطابق ندارد"
-      inclusion: در لیست قرار داده نشده است
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: اوپس! گویا ما نمی توانیم آن را پیدا کنیم.
-      help: آیا ممکن است حذف شده باشد؟
-    title: خطاها
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
     unauthorized:
-      message: شما امکان دسترسی به این برنامه را ندارید
-      help: اگر شما فکر میکنید این اشتباه است، لطفا با مدیر سیستم خود تماس بگیرید
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
     unprocessable:
-      message: اوپس! درخواست قابل پردازش نیست.
-      help: متاسفانه این یک درخواست معتبر نیست.
-  expired_reset_token: ادرس بازنشانی رمز عبور به پایان رسیده است!
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: امکانات
-    rooms: اتاق های شخصی شده
-    recordings: مدیریت ضبط جلسات
-    designs: طراحی های شخصی
-    authentication: احراز هویت کاربر
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "استفاده شده از %{href}."
+    powered_by: Powered by %{href}.
   forgot_password:
-    subtitle: فراموشی رمز عبور
-    email: ایمیل
-    submit: ارسال
-  go_back: بازگشت
-  greenlight: گرین لایت
+    subtitle: Forgot Password
+    email: Email
+    submit: Submit
+  go_back: Go back
+  greenlight: Greenlight
   header:
-    all_recordings: تمام جلسات ضبط شده
+    all_recordings: All Recordings
     dropdown:
-      account_settings: سازمان
-      help: نیاز به کمک دارید؟
-      home: خانه
-      settings: پروفایل
-      signout: خروج
-  home_room: اتاق خانه
-  info_update_success: اطلاعات با موفقیت بارگزاری شد
-  invalid_user: ورود به دلیل پیدا نشدن کاربر با خطا مواجه شد. آیا مطمئنید که حساب ایمیل درست است؟
-  invalid_credentials: ورود به دلیل اشتباه بودن نام کاربری/رمز عبور با خطا مواجه شد. آیا مطمئنید که آنها را درست وارد کرده اید؟
-  invalid_login_method: ورود به دلیل عدم تطابق حساب کاربری با خطا مواجه شد. شما می بایست توسط مکانیزم omniauth وارد شوید.
-  invite_message: "برای دعوت کسی به جلسه، این ادرس را برای آنها بفرستید"
+      account_settings: Organization
+      help: Need help?
+      home: Home
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: 'شما را برای مشاهده جلسه ضبط شده دعوت کرده است.'
-        body: 'برای مشاهده ضبط جلسات، از ادرس زیر استفاده کنید'
-        autogenerated: 'این ایمیل به صورت خودکار توسط بیگ بلو باتن تولید شده است'
-        footer: 'بیگ بلو باتن یک برنامه کنفرانس وبی متن باز است، برای اطلاعات بیشتر به بیگ بلو باتن در ادرس https://bigbluebutton.org/ مراجعه کنید.'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
+        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "%{href} یک واسط کاربری ساده برای استفاده از سرور کنفرانس وبی متن باز بیگ بلو باتن است. شما می توانید اتاق هایی برای میزبانی جلسات خود یا پیوستن به جلسات دیگران از طریق ادرس آنها، ایجاد کنید."
-    welcome: به بیگ بلو باتن خوش آمدید
-    video: ویدئوی آموزشی ما را در مورد استفاده از گرین لایت مشاهده کنید
-    upgrade: به من نشان بده چگونه به نسخه 2.0 به روز رسانی کنم!
-    version: ما یک نسخه جدید از گرین لایت را منتشر کرده ایم، اما پایگاه داده شما با آن سازگاری ندارد.
-  language_name: انگلیسی
-  language_default: پیشفرض (زبان مرورگر)
-  ldap_error: امکان دسترسی به سرور LDAP وجود ندارد. لطفا تنظیمات LDAP خود را در فایل env بررسی کرده و مطمئن شوید سرور در حال اجرا است.
-  login: ورود
-  login_title: به حساب کاربری تان وارد شوید
+    about: "Welcome to GoCode Academy VLE. To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: Watch our tutorial for students on using the online platform. 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
       approve:
-        info: حساب کاربری شما تایید شده است.
-        signin: برای دسترسی به اتاق های شخصی خود، روی دگمه زیر کلیک کرده و وارد شوید.
-        signin_link: ورود
+        info: Your account has been approved.
+        signin: To access your personal rooms, click the button below and sign in.
+        signin_link: Sign In
         signup:
-          info: یک کاربر جدید در گرین لایت ثبت نامه کرده است
-          more-info: برای داشتن مجوز دسترسی برای این کاربر به گرین لایت، شما می بایست حساب کاربری آن ها را در تنظیمات سازمان تایید کنید.
-          admins_link: مشاهده صفحه سازمان
-          subject: ثبت نام کاربر جدید گرین لایت 
-          username: "کاربر با نام %{name} و ادرس ایمیل %{email} ثبت نام کرده است."
-        subject: حساب کاربری تایید شد
-        username: "نام کاربری شما %{email} است."
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
       demoted:
-        info: "شما دیگر در %{url} مدیر نیستید."
-        more-info: شما در حال حاضر دسترسی هایی مانند یک کاربر عادی دارید و در ادامه دسترسی به امکانات مدیریتی را نخواهید داشت.
-        root_link: صفحه سازمان را مشاهده کنید
-        subtitle: دسترسی های مدیریتی لغو شدند
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
       invite:
-        info: "شما به فضای شخصی خود توسط %{name} دعوت شده اید"
+        info: You have been invited to your own personal space by %{name}
         signup: To signup using your email, click the button below and follow the steps.
-        signup_link: ثبت نام
+        signup_link: Sign Up
         signup:
-          info: کاربری که دعوت کرده بودید برای استفاده از گرین لایت ثبت نام کرده است.
-          admins_link: صفحه سازمان را مشاهده کنید
-          subject: ثبت نام کاربر گرین لایت جدید 
-          username: "کاربر با نام %{name} و ادرس ایمیل %{email} ثبت نام کرده است."
-        subject: دعوت نامه برای پیوستن به بیگ بلو باتن
-        username: "نام کاربری شما %{email} است."
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: 'بازنشانی رمز عبور'
-        welcome: "به نظر میرسد شما رمز عبور خود را برای %{bigbluebutton} فراموش کرده اید"
-        message: 'اگر این درست است، لطفا روی ادرس زیر کلیک کنید تا رمز عبوز خود را بازنشانی کنید.'
-        reset_link: رمز عبور را بازنشانی کن
-        expire: این ادرس در دو ساعت آینده خاتمه خواهد یافت.
-        ignore: اگر شما درخواست بازنشانی رمز عبور را نداده اید، با اطمینان می توانید این ایمیل را نادیده بگیرید.
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
       promoted:
-        admins_link: مشاهده صفحه شرکت
-        info: "شما در حال حاضر در %{url} مدیر هستید."
-        more-info: "به عنوان مدیر، شما می توانید کاربران، نقش های آنها و تنظیمات سایت خود را به وسیله تغییر لوگو و رنگ شخصی سازی مدیریت کنید، "
-        subtitle: امکانات مدیر واگذار شد
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "%{name}! به فضای شخصی خود خوش آمده اید."
-        success: "با استفاده از %{bigbluebutton}، شما میتوانید اتاق های شخصی برای میزبابی جلسات و همکاری با دیگران برای خود ایجاد کنید."
-        username: "نام کاربری شما %{email} است."
-        verify: برای تایید حساب کاربری خود، تنها کافی است روی دگمه زیر کلیک کنید.
-        verify_text: 'برای تایید حساب کاربری خود، تنها کافی است از زیر استفاده کنید: %{url}'
-        verify_link: حساب کاربری را تایید کنید
-        thanks: با تشکر از پیوستن شما و روز خوبی داشته باشید!
-  max_concurrent: به سقف مجاز تعداد بیشینه  جلسات همزمان رسیده اید!
+        welcome: Welcome to your personal space, %{name}!
+        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: به صورت خودکار من را وارد جلسه کن
-      create: ایجاد اتاق
-      free_delete: شما به صورت دلخواه مجاز به حذف این اتاق در هر زمانی هستید.
-      name_placeholder: نام یک اتاق را وارد کنید...
-      not_blank: نام اتاق نمی تواند خالی باشد.
-      title: ایجاد اتاق جدید
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: آیا مطمئنید که می خواهید این حساب کاربری را حذف کنید؟
-      delete: من مطمئنم، این حساب کاربری را حذف کن.
-      keep: در واقع، ترجیح میدم نگهش دارم.
-      warning: این تصمیم نهایی است. شما امکان بازیابی داده های مرتبط را <b> نخواهید داشت </b>
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "آیا شما مطمئنید که می خواهید اتاق %{room} را حذف کنید؟"
-      delete: من مطمئنم، این اتاق را حذف کن.
-      keep: با فکر کردن مجدد، من نگهش میدارم.
-      warning: "شما امکان بازیابی این اتاق یا هیچ کدام از تعداد %{recordings_num} جلسه ضبط شده مرتبط با آن را <b> نخواهید داشت </b>"
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
     invite_user:
-      email_placeholder: نام ایمیل کاربر را وارد کنید
-      footer: کاربر ایمیلی شامل دستورالعمل چگونگی ثبت نام را دریافت خواهد کرد
-      send: ارسال دعوت نامه
-      title: دعوت کاربر
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: یا
-      with: "ورود با %{provider}"
-      forgot_password: رمز عبور خود را فراموش کرده اید؟
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: تنظیمات اتاق
-      update: به روز رسانی اتاق
-      client: انتخاب نوع کلاینت
-      mute: کاربران هنگام ورود به صورت بی صدا وارد شدند
-      default: پیش فرض
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: تنظیمات مربوط به اتاق شما در هر زمانی قابل انجام خواهد بود.
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: وارد کردن نام اتاق جدید...
-  name_update_success: نام اتاق با موفقیت تغییر یافت!
-  no_user_email_exists: کاربری با ایمیل مشخص شده وجود ندارد. لطفا مطمئن شوید آن را درست تایپ کرده اید.
-  omniauth_error: خطایی در هنگام احراز هویت با مکانیزم omniauth به وجود آمده است. لطفا دوباره تلاش کنید یا با مدیر تماس بگیرید!
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
   pagy:
     nav:
-      prev: "&lsaquo; قبلی"
-      next: "بعدی &rsaquo;"
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
       gap: "&hellip;"
-  password: رمز عبور
-  password_empty_notice: رمز عبور نمی تواند خالی باشد.
-  password_reset_success: رمز عبور ارسال شد.
-  password_different_notice: تاییدیه رمز عبور با رمز ارائه شده مطابقت ندارد.
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
-    google: گوگل
-    microsoft_office365: افیس 365
-    twitter: توییتر
+    google: Google
+    microsoft_office365: Office 365
+    twitter: Twitter
   recaptcha:
     errors:
-      recaptcha_unreachable: اوپس، ما در دریافت پاسخ احراز هویت از reCAPTCHA به مشکل بر خوردیم. لطفا دوباره تلاش کنید.
-      verification_failed: احراز هویت reCAPTCHA به مشکل برخورده است، لطفا دوباره تلاش کنید.
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    all_recordings: تمام جلسات ضبط شده
-    email: ارسال جلسات ضبط شده توسط ایمیل
-    no_recordings: "این اتاق مورد ضبط شده ای %{inject} ندارد."
-    no_user_recordings: شما در حال حاظر هیچ جلسه ی ضبط شده ای ندارید.
-    no_matched_recordings: "هیج %{inject} مورد ضبط شده ای مطابق با جستجوی شما یافت نشد."
-    recorded_on: "ضبط شده در %{date}"
+    all_recordings: All Recordings
+    email: Email Recording
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: نام
-      thumbnails: تصاویر کوچک
-      length: طول
-      users: کاربران
-      visibility: حالت نمایش
-      formats: قالب ها
+      name: Name
+      thumbnails: Thumbnails
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: عمومی
-      unlisted: لیست نشده
+      public: Public
+      unlisted: Unlisted
     format:
-      presentation: ارائه
+      presentation: Presentation
   registration:
     approval: 
-      fail: حساب کاربری شما هنوز تایید نشده است. اگر چند روز از ثبت نام شما گذشته است، لطفا با مدیر خود تماس بگیرید.
-      signup: حساب کاربری شما با موفقیت ایجاد شد و برای تایید به مدیر ارسال شد.
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
     banned:
-      fail: شما دسترسی به این برنامه ندارید. اگر فکر میکنید این اشتباه است، لطفا با مدیر سیستم خود تماس بگیرید 
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
     invite:
-      fail: توکن شما به اتمام رسیده یا اشتباه است. اگر فک میکنید این اشتباه است، لطفا با مدیر سیستم خود تماس بگیرید
-      no_invite: شما دعوت نامه ای برای ورود ندارید، لطفا برای دریافت آن با مدیر تماس بگیرید.
-  rename: تغییر نام
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: بازنشانی رمز عبور
-    password: رمز عبور جدید
-    confirm: تایید رمز عبور جدید
-    update: به روز رسانی رمز عبور
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
   roles:
-    administrator: مدیر
-    banned: منع شده
-    pending: در انتظار تایید
-    super_admin: ابر مدیر
-    user: کاربر
+    administrator: Administrator
+    banned: Banned
+    pending: Pending
+    super_admin: Super Admin
+    user: User
   room:
-    create_room: ایجاد یک اتاق
-    create_room_error: خطایی در هنگام ایجاد اتاق به وجود آمده است
-    create_room_success: اتاق با موفقیت ایجاد شد
-    invited: شما برای ملحق شدن دعوت شده اید
-    invite_participants: دعوت شرکت کنندگان
-    join: پیوستن
-    last_session: "آخرین جلسه در %{session}"
-    owner: مالک
-    no_sessions: این اتاق هنوز جلسه ای ندارد!
-    recordings: موارد ضبط شده اتاق
-    sessions: جلسات
-    settings: تنظیمات اتاق
-    start: آغاز
-    unavailable: این اتاق به دلیل اینکه ایمیل صاحب آن هنوز تایید نشده است در دسترس نیست.
-    update_settings_error: خطایی در به روز رسانی تنظیمات اتاق رخ داده است
-    update_settings_success: اطلاعات اتاق با موفقیت به روز رسانی شد
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: اوپس، جلسه هنوز شروع نشده است.
-      auto: شما هنگامی که جلسه شروع شود، به صورت خودکار به جلسه ملحق خواهید شد.
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: نام کامل
-      language: زبان
-      provider: ارائه کننده
-      image: تصویر
-      image_url: آدرس تصویر پروفایل
-      subtitle: به روز رسانی اطلاعات حساب کاربری
-      title: اطلاعات حساب کاربری
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: بله، من مایل به حذف حساب کاربری خود هستم.
-      disclaimer: اگر شما انتخاب کنید که می خواهید حساب کاربری خود را پاک کنید، دیگر امکان بازگشت وجود <b> نخواهد داشت </b>. تمام اطلاعات شامل حساب کاربری شما، تنظیمات مربوطه، اتاق ها و جلسات ضبط شده حذف خواهند شد.
-      subtitle: حذف کامل حساب کاربری تان
-      title: حذف حساب کاربری
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: تاییدیه رمز عبور
-      new: رمز عبور جدید
-      old: رمز عبور قدیمی
-      subtitle: تغییر رمز عبور شما
-      title: رمز عبور
-    title: پروفایل
-    search: جستجو
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: تایید رمز عبور
-    subtitle: ایجاد حساب کاربری
-    title: ثبت نام
-    with: "ثبت نام با %{provider}"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: "من %{href} را می پذیرم"
-    accept_existing: من شرایط و قوانین را می پذیرم
-    title: شرایط و قوانین
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    این پیاده سازی از سرور تستی پیش فرض استفاده میکند، شما می بایست آن را با تنظیمات خود جایگزین کنید. برای جزئیات %{href} را مشاهده کنید.
-  update: به روز رسانی
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: تاییدیه
-    activated: حساب کاربری تایید شد!
-    already_verified: حساب کاربری قبلا تایید شده است
-    invalid: ادرس تاییدیه غیر معتبر
-    not_verified: حساب کاربری شما هنوز تایید نشده است.
-    resend: ارسال مجدد ایمیل تاییدیه
-    signin: لطفا به منظور دسترسی به حساب کاربری خود وارد شوید.
-    title: ایمیل خود را تایید کنید
-    verification: تاییدیه
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
+    verification: Verification
