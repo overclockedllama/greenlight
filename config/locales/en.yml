@@ -108,6 +108,9 @@ en:
     internal:
       message: Oh no! Looks like something went wrong on our end.
       help: The error has been logged, we'll take a look!
+    maintenance:
+      message: Sorry, we're down for maintenance.
+      help: We'll be back soon!
     migration_error:
       contact_admin: If you are not an administrator, please contact one.
       continue: I'd like to stay using 1.0.
@@ -173,8 +176,8 @@ en:
   landing:
     about: "To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
     welcome: Welcome to GoCode Academy!
-    video: . 
-    upgrade: 
+    video: .
+    upgrade:
     version: "Admin Notice: We've released a new version , but your database isn't compatible."
   language_name: English
   language_default: Default (browser language)
@@ -191,7 +194,7 @@ en:
           info: A new user has signed up to use Greenlight.
           more-info: To allow this user to access Greenlight you must approve their account in organization settings.
           admins_link: Visit the Organization Page
-          subject: New GoCode User Sign Up 
+          subject: New GoCode User Sign Up
           username: The user signed up with the name %{name} and the email %{email}.
         subject: Account Approved
         username: Your username is %{email}.
@@ -207,7 +210,7 @@ en:
         signup:
           info: A user that was invited has signed up to use Greenlight.
           admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up 
+          subject: New Greenlight User Sign Up
           username: The user signed up with the name %{name} and the email %{email}.
         subject: Invitation to join BigBlueButton
         username: Your username is %{email}.
@@ -225,7 +228,7 @@ en:
         subtitle: Administrator Rights Granted
       verify_email:
         welcome: Welcome to GoCode Online School , %{name}!
-        success: Thank you for signing up. 
+        success: Thank you for signing up.
         username: Your username is %{email}.
         verify: To verify your account, just click the button below.
         verify_text: 'To verify your account, just follow this link: %{url}'
@@ -311,11 +314,11 @@ en:
     format:
       presentation: Presentation
   registration:
-    approval: 
+    approval:
       fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
       signup: Your account was successfully created. It has been sent to an administrator for approval.
     banned:
-      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator.
     invite:
       fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
       no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
