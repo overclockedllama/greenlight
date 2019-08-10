@@ -16,405 +16,383 @@
 
 # Locale.
 
-pt_BR:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "Termos e condições"
-        email: E-mail
-        name: Nome
-        password: Senha
-        password_confirmation: Confirmação de Senha
-    errors:
-      models:
-        user:
-          confirmation: não corresponde à senha
+        accepted_terms: "Terms and Conditions"
   administrator:
     site_settings:
       authentication:
-        disabled: Desabilitado
-        enabled: Habilitado
-        info: Permita que apenas usuários autenticados se juntem a uma sala
-        title: Exija autenticação para salas
-        user-info: Você precisa se autenticar no Greenlight para se juntar a essa sala
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to join this room
       branding:
-        change: Alterar Imagem
-        info: Altera a imagem da marca que aparece no canto superior esquerdo
-        placeholder: URL da Imagem
-        title: Imagem da Marca
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
       color:
-        info: "Alterar a cor regular irá alterar ambas as cores Iluminada e Escurecida. Iluminada e Escurecida poderão ser alteradas individualmentes, após isso."
-        title: Cor primária
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
         regular: Regular
-        lighten: Iluminada
-        Darken: Escurecida
+        lighten: Lighten
+        Darken: Darken
       registration:
-        info: Altera a maneira com a qual os usuários se registram no site
-        title: Método de Registro
+        info: Change the way that users register to the website
+        title: Registration Method
         methods:
-          approval: Aprovar/Recusar
-          invite: Entrar por Convite
-          open: Registro Aberto
-      rooms:
-        info: Limita o número de salas que um usuário pode ter (incluindo Sala Home). Essa configuração não se aplica para administradores.
-        title: Número de salas por Usuário.
-      subtitle: Personalizar Greenlight
-      title: Configurações do Site
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
     flash:
-      approved: Usuário foi aprovado com sucesso.
-      banned: Usuário foi banido com sucesso.
-      unbanned: Usuário foi desbanido com sucesso.
-      delete: Usuário apagado com sucesso.
-      delete_fail: Falha ao apagar usuário.
-      demoted: Usuário foi rebaixado com sucesso.
-      invite: "Convite enviado para %{email} com sucesso"
-      invite_email_verification: "E-mails precisam estar habilitados para poder utilizar esse método. Por favor, contate o seu administrador do sistema."
-      promoted: Usuário foi promovido com sucesso.
-      registration_method_updated: Método de registro atualizado com sucesso.
-      settings: Configurações do Site alteradas com sucesso.
-      unauthorized: Você não possui permissão para realizar ações nesse usuário.
-    title: Configurações da Organização
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
     users:
-      invite: Convidar Usuário
+      invite: Invite User
       edit:
-        title: Editar Detalhes do Usuário
+        title: Edit User Details
       settings:
-        approve: Aprovar
-        decline: Recusar
-        ban: Banir Usuário
-        delete: Apagar
-        demote: Rebaixar Usuário
-        edit: Editar
-        promote: Promover para Admin
-        unban: Desbanir Usuário
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
       table:
-        authenticator: Autenticador
-        created: Criado
-        name: Nome
-        not_found: Nenhum usuário corresponde a sua pesquisa
-        no_users: Nenhum usuário encontrado
-        role: Função
-        uid: ID de Usuário
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
         username: Username
-      title: Administrar Usuários
-  add_to_google_calendar: "Adicionar ao Google Calendar"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: "Oops, um erro ocorreu ao iniciar a sala."
-  cancel: Cancelar
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode Online School
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: "Cookies nos ajudam a fornecer nossos serviços. Por utilizar nossos serviços, você aceita o nosso uso de cookies."
-    cookie_button: Eu concordo
-  copied: Copiado
-  copy: Copiar
-  default_admin: "Você ainda está utilizado a senha padrão para essa conta.  Por favor clique <a href=\"%{edit_link}\">aqui</a> para alterar isso."
-  delete: Apagar
-  delivery_error: "Um erro ocorreu no envio do e-mail. Por favor, contate um administrador."
-  docs: Documentação
-  email: E-mail
-  email_sent: "Seu e-mail de %{email_type} foi enviado! (se você não recebeu, ele pode ter caído na sua caixa de spam)"
-  enter_your_name: Insira seu nome
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
+  copied: Copied
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
+  email: Email
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
     bigbluebutton:
-      help: "Por favor, tenha certeza que as etapas apropriadas foram finalizadas.. <a href=\"%{doc_link}\">Saiba mais</a>"
-      message: BigBlueButton Endpoint ou Chave Secret inválida
-      title: Erro no Servidor
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: Parece que acontecei alguma coisa errada no nosso lado.
-      help: "O erro foi registrado, daremos uma olhada."
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: "Se você não é um administrador, por favor contate um administrador."
-      continue: Gostaria de permanecer usando 1.0.
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        Greenlight encontrou um erro de migração no banco de dados.<br> Isso pode ser porque você não atualizou para o Greenlight 2.0.
-      upgrade: Mostre-me como atualizar para 2.0.
-      version: "Lançamos uma nova versão do Greenlight, entretanto sua base de dados é incompatível."
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
     messages:
-      blank: não pode ser branco.
-      too_short: é muito curto
-      invalid: é inválido
-      taken: já foi utilizado
-      accepted: precisa ser aceitado
-      confirmation: "não corresponde %{attribute}"
-      inclusion: não está incluso na lista
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: Desculpa! A página que você está procurando não existe.
-      help: "É possível que isso tenha sido removido?"
-      user_not_found:
-        help: "Por favor, contate um administrador."
-        message: "Desculpe, esse usuário não está registrado."
-      user_missing:
-        help: "Por favor, verifique a URL e tente novamente."
-        message: A URL inserida não é válida.
-    title: Erros
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
     unauthorized:
-      message: Você não possui acesso a essa aplicação.
-      help: "Se você acredita que isso é um erro, por favor, contate o seu administrador do sistema."
-  expired_reset_token: O link para resetar a sua senha expirou.
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
+    unprocessable:
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: Funcionalidades
-    rooms: Salas personalizadas
-    recordings: Gerenciar gravações
-    designs: Designs personalizados
-    authentication: Autenticação de usuário
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "Powered by %{href}."
+    powered_by: "GoCode Academy – Email: <a href='mailto://hello@gocode.academy'>hello@gocode.academy</a>"
   forgot_password:
-    subtitle: Esqueci a senha
+    subtitle: Forgot Password
     email: Email
-    submit: Enviar
-  go_back: Voltar
+    submit: Submit
+  go_back: Go back
   greenlight: Greenlight
   header:
-    all_recordings: Todas Gravações.
+    all_recordings: All Recordings
     dropdown:
-      account_settings: Organização
-      help: "Precisa de ajuda?"
+      account_settings: Organization
+      help: Need help?
       home: Home
-      settings: Perfil
-      signout: Sair
-  home_room: Sala inicial
-  info_update_success: Informações atualizadas com sucesso.
-  invalid_user: "O login falhou por que não encontramos esse usuário no nosso banco de dados. Tem certeza que a conta de e-mail está correta?"
-  invalid_credentials: "O login falhou porque a credencial utilizada é inválida. Tem certeza que inseriu as informações corretamente?"
-  invalid_login_method: O login falhou porque sua conta foi criada utilizando login social. Selecione a opção de login social para continuar.
-  invite_message: "Para convidar alguém para a reunião, envie este link:"
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: 'lhe convidou para visualizar uma gravação.'
-        body: 'Para visualizar a gravação, clique no link abaixo:'
-        autogenerated: 'Esse e-mail foi gerado automaticamente pelo BigBlueButton.'
-        footer: 'BigBlueButton é um sistema de conferência web de código aberto. Para mais informações sobre o BigBlueButton, acesse https://bigbluebutton.org/.'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
+        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "%{href} é um front-end para seu servidor BigBlueButton. Você pode criar suas salas para realizar sessões, ou entrar em salas de outras pessoas utilizando um link curto."
-    welcome: Bem-vindo ao BigBlueButton.
-    video: Assista ao nosso tutorial sobre como utilizar o Greenlight
-    upgrade: Mostre-me como atualizar para o 2.0!
-    version: "Lançamos uma nova versão do Greenlight, entretanto sua base de dados é incompatível."
-  language_default: Padrão (idioma do navegador)
-  ldap_error: Não é possível conectar ao servidor LDAP. Verifique sua configuração LDAP e certifique-se de que seu servidor está funcionando.
-  login: Entrar
-  login_title: Entre em sua conta.
+    about: "To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: . 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
       approve:
-        info: Sua conta foi aprovada.
-        signin: "Para acessar suas salas pessoais, clique no botão abaixo e entre na aplicação."
-        signin_link: Entrar
+        info: Your account has been approved.
+        signin: To access the platform, click the button below and sign in.
+        signin_link: Sign In
         signup:
-          info: Um novo usuário se cadastrou para utilizar o Greenlight.
-          more-info: "Para permitir que esse usuário acesse o Greenlight, você precisa aprovar a sua conta nas configurações da Organização."
-          admins_link: Visitar a Página da Organização.
-          subject: Novo cadastro de conta do Greenlight
-          username: "Esse usuário se cadastrou com o nome %{name} e o e-mail %{email}."
-        subject: Conta Aprovada
-        username: "Seu username é %{email}."
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New GoCode User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
       demoted:
-        info: "Você não é mais um administrador em %{url}."
-        more-info: Agora você possui os mesmos privilégios que um usuário normal e não poderá mais acessar as configurações de Administrador.
-        root_link: Entrar
-        subtitle: Direitos de Administrador Removidos.
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
       invite:
-        info: "Você foi convidado para possuir um espaço pessoal por %{name}"
-        signup_info: "Para se cadastrar utilizado o seu e-mail, clique no botão abaixo e siga os passos."
-        signup_link: Cadastrar-se
+        info: You have been invited to your own personal space by %{name}
+        signup: To signup using your email, click the button below and follow the steps.
+        signup_link: Sign Up
         signup:
-          info: Um usuário que foi convidado se cadastrou para utilizar o Greenlight.
-          admins_link: Visite a página da Organização.
-          subject: Novo Cadastro de Usuário no Greenlight
-          username: "Esse usuário se cadastrou com o nome %{name} e o e-mail %{email}."
-        subject: Convite para se juntar ao BigBlueButton.
-        username: "Seu username é %{email}."
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: 'Reset de senha'
-        welcome: "Parece que você esqueceu sua senha para%{bigbluebutton}"
-        message: 'Se isso for verdade, por favor clique no link abaixo para resetar a sua senha:'
-        reset_link: Reset de senha
-        expire: Esse link expirará em duas horas.
-        ignore: Você pode ignorar esse e-mail caso você não tenha solicitado esse reset de senha.
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
       promoted:
-        admins_link: Visite a Página da Organização.
-        info: "Agora você é um administrador em %{url}."
-        more-info: "Como administrador, você pode administrar usuários, suas funções e alterar as configurações do site, podendo alterar seu logo e a cor."
-        subtitle: Direitos de Administrador concedidos.
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "Bem vindo ao seu espaço pessoal, %{name}!"
-        success: "Aproveitando %{bigbluebutton}, você pode criar suas próprias salas para hospedar sessões de video-conferências e colaborar com outros."
-        username: "Seu username é %{email}."
-        verify: "Para verificar sua conta, clique no link abaixo."
-        verify_text: 'Para verificar sua conta, siga esse link: %{url}'
-        verify_link: Verificar Conta
-        thanks: "Obrigado por se juntar a nós, tenha um ótimo dia!"
-  max_concurrent: O número máximo de sessões simultâneas foi alcançado.
+        welcome: Welcome to GoCode Online School , %{name}!
+        success: Thank you for signing up. 
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: "Automaticamente, me junte a sala."
-      create: Criar Sala
-      free_delete: Você poderá apagar esta sala a qualquer momento.
-      name_placeholder: Insira o nome da sala...
-      not_blank: O nome da sala não pode ficar vazio.
-      title: Criar nova sala
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: "Você tem certeza que quer excluir essa conta?"
-      delete: "Tenho certeza, apague a conta."
-      keep: "Não, irei mantê-la."
-      warning: Esta é uma decisão final. Você <b>não</b> será capaz de recuperar os dados associados.
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "Você tem certeza de que deseja apagar %{room}?"
-      delete: "Sim, apagar esta sala."
-      keep: "Não, irei mantê-la."
-      warning: Você <b>não</b> será capaz de recuperar essa sala
-      recording_warning: "ou qualquer um de suas %{recordings_num} gravações associadas."
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
     invite_user:
-      email_placeholder: Insira o e-mail do usuário
-      footer: O usuário receberá um e-mail com instruções sobre como se cadastrar
-      send: Enviar Convit
-      title: Convidar Usuário
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: ou
-      with: "Entrar com %{provider}"
-      forgot_password: "Esqueceu a senha?"
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: Configurações da sala
-      update: Atualizar sala
-      client: Selecione o tipo de cliente
-      mute: Usuários entram em mudo
-      default: Padrão
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: Você pode editar as configurações da sala a qualquer momento.
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: Digite o novo nome da sala...
-  name_update_success: Nome da sala modificado com sucesso.
-  no_user_email_exists: Nenhum usuário foi encontrado com o e-mail especificado. Por favor confirme os dados informados.
-  omniauth_error: Um erro ocorreu enquanto autenticava com omniauth. Tente novamente ou contate um administrador.
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
   pagy:
     nav:
-      prev: "&lsaquo; Anterior"
-      next: "Próximo &rsaquo;"
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
       gap: "&hellip;"
-  password: Senha
-  password_empty_notice: A senha não pode ser vazia.
-  password_reset_success: A senha foi resetada.
-  password_different_notice: A confirmação de senha não confere.
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
     google: Google
-    office365: Office 365
+    microsoft_office365: Office 365
     twitter: Twitter
-    ldap: LDAP
   recaptcha:
     errors:
-      recaptcha_unreachable: "Oops, não conseguimos validar seu reCAPTCHA. Por favor, tente novamente."
-      verification_failed: "Verificação do reCAPTCHA falhou, por favor, tente novamente."
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    all_recordings: Todas Gravações
-    email: Enviar link da gravação por e-mail
-    no_recordings: "Esta sala não possui %{inject} gravações."
-    no_user_recordings: Você não possui gravações.
-    no_matched_recordings: "Nenhuma gravação corresponde à sua busca %{inject}."
-    recorded_on: "Gravado em %{date}"
+    all_recordings: All Recordings
+    email: Email Recording
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: Nome
-      thumbnails: Miniaturas
-      length: Duração
-      users: Usuários
-      visibility: Visibilidade
-      formats: Formatos
+      name: Name
+      thumbnails: Thumbnails
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: Público
-      unlisted: Não listado
+      public: Public
+      unlisted: Unlisted
     format:
-      presentation: Apresentação
+      presentation: Presentation
   registration:
-    approval:
-      fail: "Sua conta ainda não foi aprovada. Se vários dias se passaram desde que você se cadastrou, por favor, contate o seu administrador."
-      signup: Sua conta foi criada com sucesso. Ela foi enviada para um administrador para aprovação.
+    approval: 
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
     banned:
-      fail: "Você não possui acesso a essa aplicação. Se você acredita que isso seja um engano, por favor, contate o seu administrador." 
-    deprecated:
-      new_signin: Selecione um novo método de login para a sua conta. Todas as salas de sua antiga conta serão migradas para a nova conta.
-      twitter_signin: "Entrar pelo Twitter foi descontinuado e será removido na próxima versão. Clique <a href=\"%{link}\"> aqui </a> para mover a sua conta para um novo método de autenticação."
-      twitter_signup: "Entrar pelo Twitter foi descontinuado. Por favor, utilize um método de cadastro diferente."
-      merge_success: Unimos sua conta do Twitter com sua nova conta com sucesso. Sua antiga conta do Twitter foi excluída.
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
     invite:
-      fail: "Ou seu token é inválido, ou ele expirou. Se você acredita que isso seja um engano, por favor, contate o seu administrador."
-      no_invite: "Você não possui um convite para entrar. Por favor, contate o seu administrador para receber um."
-  rename: Renomear
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: Resetar senha
-    password: Nova senha
-    confirm: Confirmação da nova senha
-    update: Atualizar senha
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
   roles:
-    administrator: Administrador
-    banned: Banid
-    pending: Pendent
-    super_admin: Super Administrador
-    user: Usuário
+    administrator: Administrator
+    banned: Banned
+    pending: Pending
+    super_admin: Super Admin
+    user: User
   room:
-    create_room: Criar uma Sala
-    create_room_error: Ocorreu um erro ao criar a sala
-    create_room_success: Sala criada com sucesso
-    invited: Você foi convidado a participar
-    invite_participants: Convidar participantes
-    join: Participar
-    last_session: "Última sessão em %{session}"
-    owner: Dono
-    no_sessions: Nenhuma sessão foi realizada nesta sala.
-    recordings: Gravações da Sala
-    room_limit: Você atingiu o número máximo de salas permitido
-    room_limit_exceeded: "Você excedeu o número de salas permitido. Por favor, delete %{difference} sala(s) para acessar essa sala."
-    sessions: Sessões
-    settings: Configurações da sala
-    start: Iniciar
-    unavailable: Esta sala não está disponível pois o e-mail do dono da sala ainda não foi verificado.
-    update_settings_error: Ocorreu um erro ao atualizar as configurações da sala
-    update_settings_success: Configurações da sala atualizadas com sucesso
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: Esse encontro ainda não começou.
-      auto: Você será automaticamente inserido na reunião quando ela começar.
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: Nome Completo
-      language: Idioma
-      provider: Fornecedor
-      image: Imagem
-      image_url: URL da imagem de perfil
-      subtitle: Atualizar suas informações da conta
-      title: Informações da conta
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: "Sim, eu gostaria de apagar minha conta."
-      disclaimer: "Se você escolher apagar sua conta, isto <b>NÃO</b> poderá ser desfeito. Todas as informações relacionadas à sua conta, incluindo configurações, salas e gravações serão removidas."
-      subtitle: Apagar conta permanentemente
-      title: Apagar conta
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: Confirmação da nova senha
-      new: Nova senha
-      old: Senha antiga
-      subtitle: Alterar sua senha
-      title: Senha
-    title: Perfil
-    search: Pesquisar
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: Confirmação de senha
-    subtitle: Criar uma conta
-    title: Criar uma conta
-    with: "Criar uma conta com %{provider}"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: "Aceito os %{href}"
-    accept_existing: Aceito os termos e condições
-    title: Termos e condições
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    Esta implantação está usando um servidor de teste pré-configurado, você deve substitui-lo pelo seu próprio. Para detalhes, veja o %{href}.
-  update: Atualizar
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: Verificar
-    activated: Conta verificada
-    already_verified: Sua conta já foi verificada
-    invalid: Link de verificação inválido
-    not_verified: Sua conta ainda não foi verificada.
-    resend: Reenviar e-mail de verificação
-    signin: Faça login para acessar sua conta.
-    title: Verificar seu e-mail
-    verification: Verificação
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
+    verification: Verification

@@ -16,306 +16,383 @@
 
 # Locale.
 
-vi_VN:
+en:
   activerecord:
     attributes:
       user:
-        accepted_terms: "Điều khoản và điều kiện"
+        accepted_terms: "Terms and Conditions"
   administrator:
     site_settings:
+      authentication:
+        disabled: Disabled
+        enabled: Enabled
+        info: Only allow authenticated users to join a room
+        title: Require Authentication for Rooms
+        user-info: You must sign in to join this room
       branding:
-        change: Đổi hình ảnh
-        info: Thay đổi logo góc trái
-        placeholder: URL hình ảnh...
-        title: Hình ảnh thương hiệu
+        change: Change Image
+        info: Change the branding image that appears in the top left corner
+        placeholder: Image Url...
+        title: Branding Image
       color:
-        info: Thay đổi màu chủ đạo được sử dụng trên trang web
-        title: Màu chủ đạo
-      subtitle: Thiết lập Greenlight
-      title: Cài đặt trang
+        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
+        title: Primary Color
+        regular: Regular
+        lighten: Lighten
+        Darken: Darken
+      registration:
+        info: Change the way that users register to the website
+        title: Registration Method
+        methods:
+          approval: Approve/Decline
+          invite: Join by Invitation
+          open: Open Registration
+      subtitle: Customize Greenlight
+      title: Site Settings
     flash:
-      banned: Người dùng đã bị cấm thành công.
-      unbanned: Người dùng được bỏ cấm thành công.
-      delete: Người dùng đã xóa thành công
-      delete_fail: Không thể xóa người dùng
-      demoted: Người dùng đã được hạ bậc thành công
-      promoted: Người dùng đã được thăng bậc thành công
-      unauthorized: Bạn không được phép thực hiện hành động đối với người dùng này
-    title: Cài đặt tổ chức
+      approved: User has been successfully approved.
+      banned: User has been successfully banned.
+      unbanned: User has been successfully unbanned.
+      delete: User deleted successfully
+      delete_fail: Failed to delete user
+      demoted: User has been successfully demoted
+      invite: Invite successfully sent to %{email}
+      invite_email_verification: ALLOW_MAIL_NOTIFICATIONS must be set to true in order to use this method
+      promoted: User has been successfully promoted
+      registration_method_updated: Registration method successfully updated
+      settings: Site Settings successfully changed
+      unauthorized: You are not authorized to perform actions on this user
+    title: Organization Settings
     users:
+      invite: Invite User
       edit:
-        title: Chỉnh sửa chi tiết người dùng
+        title: Edit User Details
       settings:
-        ban: Cấm người dùng
-        delete: Xóa
-        demote: Hạ bậc người dùng
-        edit: Chỉnh sửa
-        promote: Nâng bậc thành người quản trị
-        unban: Hủy cấm người dùng
+        ban: Ban User
+        delete: Delete
+        demote: Demote to User
+        edit: Edit
+        promote: Promote to Admin
+        unban: Unban User
       table:
-        authenticator: Trình xác thực
-        created: Đã tạo
-        name: Tên
-        not_found: Không có người dùng phù hợp với tìm kiếm của bạn
-        no_users: Không tìm thấy người dùng
-        role: Vai trò
-        uid: ID người dùng
-        username: Tên đăng nhập
-      title: Quản lý người dùng
-  add_to_google_calendar: "Thêm vào lịch Google"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: "Rất tiếc, đã xảy ra lỗi khi bắt đầu cuộc họp!"
-  cancel: Hủy
+        authenticator: Authenticator
+        created: Created
+        name: Name
+        not_found: No users match your search
+        no_users: No users found
+        role: Role
+        uid: User ID
+        username: Username
+      title: Manage Users
+  add_to_google_calendar: "Add to Google Calendar"
+  bigbluebutton: GoCode Online School
+  bigbluebutton_exception: Oops, there was an error when starting the meeting!
+  cancel: Cancel
   cookies:
-    cookie_info: "Cookies giúp chúng tôi cung cấp tốt trải nghiệm dịch vụ. Với việc sử dụng dịch vụ của chúng tôi, bạn đồng ý với việc chúng tôi sử dụng cookie."
-    cookie_button: Tôi đồng ý
-  copied: Đã sao chép
-  copy: Sao chép
-  default_admin: "Bạn vẫn đang sử dụng mật khẩu mặc định cho tài khoản này. Vui lòng bấm vào <a href=\"%{edit_link}\">đây</a> để thay đổi mật khẩu."
-  delete: Xóa
-  delivery_error: Xảy ra lỗi trong quá trình gửi email. Vui lòng liên hệ với quản trị viên!
-  docs: Tài liệu
+    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    cookie_button: I Agree
+  copied: Copied
+  copy: Copy
+  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
+  delete: Delete
+  delivery_error: An error occured during email delivery. Please contact an administrator!
+  docs: Documentation
   email: Email
-  email_sent: "Email %{email_type} của bạn đã được gửi! (Vui lòng kiểm tra thư mục Spam nếu bạn chưa nhận được)"
-  enter_your_name: Điền họ tên!
+  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
+  enter_your_name: Enter your name!
   errors:
+    bigbluebutton:
+      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
     internal:
-      message: Ồ không! Có vẻ như đã xảy ra sự cố.
-      help: "Lỗi đã được ghi lại, chúng tôi sẽ xem xét!"
+      message: Oh no! Looks like something went wrong on our end.
+      help: The error has been logged, we'll take a look!
     migration_error:
-      contact_admin: "Nếu bạn không phải là quản trị viên, xin vui lòng liên hệ với người quản lý."
-      continue: Tôi muốn tiếp tục sử dụng 1.0.
+      contact_admin: If you are not an administrator, please contact one.
+      continue: I'd like to stay using 1.0.
       notice: >
-        Greenlight gặp lỗi di chuyển cơ sở dữ liệu.<br>Điều này có thể là do bạn chưa cập nhật lên Greenlight 2.0.
-      upgrade: Hãy chỉ cho tôi cách nâng cấp lên 2.0!
-      version: "Chúng tôi đã phát hành phiên bản mới của Greenlight, nhưng cơ sở dữ liệu của bạn không tương thích."
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Show me how to upgrade to 2.0!
+      version: We've released a new version of Greenlight, but your database isn't compatible.
     messages:
-      blank: Không thể để trống
-      too_short: quá ngắn
-      invalid: không có hiệu lục
-      taken: đã được thực hiện
-      accepted: phải được chấp nhận
-      confirmation: "Không trùng với %{attribute}"
-      inclusion: không có trong danh sách
+      blank: can't be blank
+      too_short: is too short
+      invalid: is invalid
+      taken: has already been taken
+      accepted: must be accepted
+      confirmation: doesn't match %{attribute}
+      inclusion: is not included in the list
     not_found:
-      message: Rất tiếc! Có vẻ như chúng ta không thể tìm thấy.
-      help: "Có thể nó đã được gỡ bỏ?"
-    title: Lỗi
+      message: Whoops! Looks like we can't find that.
+      help: Is it possible its been removed?
+    title: Errors
     unauthorized:
-      message: Bạn không có quyền truy cập vào ứng dụng này
-      help: "Nếu bạn nghĩ đây là một lỗi, vui lòng liên hệ với quản trị viên hệ thống."
+      message: You do not have access to this application
+      help: If you believe this is a mistake, please contact your system administrator.
     unprocessable:
-      message: Rất tiếc! Yêu cầu là không thể xử lý.
-      help: "Thật không may, đây không phải là một yêu cầu hợp lệ."
-  expired_reset_token: Liên kết đặt lại mật khẩu đã hết hạn!
+      message: Oops! Request is unprocessable.
+      help: Unfortunately this isn't a valid request.
+  expired_reset_token: Password reset link has expired!
   features:
-    title: Tính năng
-    rooms: Phòng cá nhân
-    recordings: Quản lý ghi hình
-    designs: Tùy chỉnh Thiết kế
-    authentication: Chứng thực người dùng
+    title: Features
+    rooms: Personalized Rooms
+    recordings: Recording Management
+    designs: Custom Designs
+    authentication: User Authentication
   footer:
-    powered_by: "Được phát triển bởi %{href}."
+    powered_by: "GoCode Academy – Email: <a href='mailto://hello@gocode.academy'>hello@gocode.academy</a>"
   forgot_password:
-    subtitle: Quên mật khẩu
+    subtitle: Forgot Password
     email: Email
-    submit: Gửi
-  go_back: Quay lại
+    submit: Submit
+  go_back: Go back
   greenlight: Greenlight
   header:
-    all_recordings: Tất cả bản ghi hình
+    all_recordings: All Recordings
     dropdown:
-      account_settings: Tổ chức
-      help: "Cần trợ giúp?"
-      home: Trang chủ
-      settings: Hồ sơ
-      signout: Đăng xuất
-  home_room: Phòng Chính
-  info_update_success: Thông tin đã được cập nhật thành công.
-  invalid_user: "Đăng nhập thất bại do không tìm thấy người dùng. Bạn có chắc chắn tài khoản email là chính xác?"
-  invalid_credentials: "Đăng nhập thất bại do thông tin không hợp lệ. Bạn có chắc chắn bạn đã nhập chính xác?"
-  invalid_login_method: Đăng nhập thất bại do không khớp tài khoản. Bạn cần đăng nhập bằng Omniauth.
-  invite_message: "Để mời ai đó tham gia phòng, hãy gửi cho họ liên kết này:"
+      account_settings: Organization
+      help: Need help?
+      home: Home
+      settings: Profile
+      signout: Sign out
+  home_room: Home Room
+  info_update_success: Information successfully updated.
+  invalid_user: Login failed due to user not found. Are you sure the email account is correct?
+  invalid_credentials: Login failed due to invalid credentials. Are you sure you entered them correctly?
+  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
+  invite_message: "To invite someone to the meeting, send them this link:"
   javascript:
     room:
       mailer:
-        subject: 'đã mời bạn xem một bản ghi hình.'
-        body: 'Để xem bản ghi, hãy theo liên kết dưới đây:'
-        autogenerated: 'Email này được tự động tạo bởi hệ thống LiveRoom.'
+        subject: 'has invited you to view a recording.'
+        body: 'To view the recording, follow the link below:'
+        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
         footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
   landing:
-    about: "LiveRoom là giao điện quản lý đơn giản cho hệ thống phòng học và hội thảo online được đựa trên nền tảng phát triển BigBlueButton. Bạn có thể tạo phòng riêng của mình để tổ chức các buổi dạy học, hội thảo từ xa hoặc tham gia với người khắc thông qua một đường dẫn liên kết ngắn gọn."
-    welcome: Chào mừng đến với LiveRoom
-    video: Xem thêm hướng dẫn sử dụng LiveRoom
-    upgrade: Hãy chỉ cho tôi cách nâng cấp lên 2.0!
-    version: "Chúng tôi đã phát hành phiên bản mới của Greenlight, nhưng cơ sở dữ liệu của bạn không tương thích."
-  language_default: Mặc định (ngôn ngữ từ trình duyệt)
-  ldap_error: Không thể kết nối với máy chủ LDAP. Vui lòng kiểm tra cấu hình LDAP của bạn trong tệp env và đảm bảo máy chủ của bạn đang hoạt động.
-  login: Đăng nhập
-  login_title: Đăng nhập vào tài khoản của bạn
+    about: "To sign up for classes please visit our <a href='https://gocode.academy'>Home Page</a>. "
+    welcome: Welcome to GoCode Academy!
+    video: . 
+    upgrade: 
+    version: "Admin Notice: We've released a new version , but your database isn't compatible."
+  language_name: English
+  language_default: Default (browser language)
+  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
+  login: Sign in
+  login_title: Sign in to your account
   mailer:
     user:
+      approve:
+        info: Your account has been approved.
+        signin: To access the platform, click the button below and sign in.
+        signin_link: Sign In
+        signup:
+          info: A new user has signed up to use Greenlight.
+          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
+          admins_link: Visit the Organization Page
+          subject: New GoCode User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Account Approved
+        username: Your username is %{email}.
+      demoted:
+        info: You are no longer an administrator on %{url}.
+        more-info: You now have the same privileges as a regular user and will no longer be able to access any of the Administrator settings.
+        root_link: Sign In
+        subtitle: Administrator Rights Rescinded
+      invite:
+        info: You have been invited to your own personal space by %{name}
+        signup: To signup using your email, click the button below and follow the steps.
+        signup_link: Sign Up
+        signup:
+          info: A user that was invited has signed up to use Greenlight.
+          admins_link: Visit the Organization Page
+          subject: New Greenlight User Sign Up 
+          username: The user signed up with the name %{name} and the email %{email}.
+        subject: Invitation to join BigBlueButton
+        username: Your username is %{email}.
       password_reset:
-        title: 'Đặt lại mật khẩu'
-        welcome: "Có vẻ như bạn đã quên mật khẩu của mình cho %{bigbluebutton}"
-        message: 'Nếu đã quên, vui lòng nhấp vào liên kết bên dưới để đặt lại mật khẩu của bạn:'
-        reset_link: Đặt lại mật khẩu
-        expire: Liên kết này sẽ hết hạn trong hai giờ.
-        ignore: Bạn có thể bỏ qua email này hoàn toàn nếu bạn không yêu cầu đặt lại mật khẩu.
+        title: 'Password reset'
+        welcome: It seems like you forgot your password for %{bigbluebutton}
+        message: 'If this is true, please click the link below to reset your password:'
+        reset_link: Reset Password
+        expire: This link will expire in two hours.
+        ignore: You can safely ignore this email if you did not request a password reset.
+      promoted:
+        admins_link: Visit the Organization Page
+        info: You are now an administrator on %{url}.
+        more-info: As an administrator, you can manage users, their role and configure your site settings by changing the logo and brand colour.
+        subtitle: Administrator Rights Granted
       verify_email:
-        welcome: "Chào mừng đến với không gian cá nhân của bạn, %{name}!"
-        success: "Tận dụng %{bigbluebutton}, bạn có thể tạo phòng riêng để tổ chức các phiên và cộng tác với những người khác."
-        username: "Tên đăng nhập là %{email}."
-        verify: "Để xác minh tài khoản của bạn, chỉ cần nhấp vào nút bên dưới."
-        verify_text: 'Để xác minh tài khoản của bạn, cần vào liên kết sau: %{url}'
-        verify_link: Xác nhận Tài khoản
-        thanks: Cảm ơn bạn đã tham gia và chúc một ngày tuyệt vời!
-  max_concurrent: Số lượng phiên đồng thời tối đa được phép đã đạt được!
+        welcome: Welcome to GoCode Online School , %{name}!
+        success: Thank you for signing up. 
+        username: Your username is %{email}.
+        verify: To verify your account, just click the button below.
+        verify_text: 'To verify your account, just follow this link: %{url}'
+        verify_link: Verify Account
+        thanks: Thanks for joining and have a great day!
+  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
   modal:
     create_room:
-      auto_join: Tự động tham gia vào phòng
-      create: Tạo Phòng
-      free_delete: Bạn sẽ được tự do xóa căn phòng này bất cứ lúc nào.
-      name_placeholder: Nhập tên phòng...
-      not_blank: Tên phòng không được để trống.
-      title: Tạo Phòng Mới
+      auto_join: Automatically join me into the room
+      create: Create Room
+      free_delete: You will be free to delete this room at any time.
+      name_placeholder: Enter a room name...
+      not_blank: Room name cannot be blank.
+      title: Create New Room
     delete_account:
-      confirm: "Bạn có chắc chắn muốn xóa tài khoản này?"
-      delete: "Tôi chắc chắn, hãy xóa tài khoản này."
-      keep: "Thật ra, tôi sẽ giữ nó."
-      warning: Quyết định này là cuối cùng. Bạn sẽ <b>không thể</b> phục hồi dữ liệu liên quan.
+      confirm: Are you sure you want to delete this account?
+      delete: I'm sure, delete this account.
+      keep: Actually, I'll keep it.
+      warning: This decision is final. You will <b>not</b> be able to recover associated data.
     delete_room:
-      confirm: "Bạn có chắc chắn muốn xóa %{room}?"
-      delete: "Tôi chắc chắn, hãy xóa phòng này."
-      keep: "Ngược lại, tôi sẽ giữ nó."
-      warning: "Bạn sẽ <b>không thể</b> khôi phục phòng này hoặc bất kỳ %{recordings_num} bản ghi hình liên quan."
+      confirm: Are you sure you want to delete %{room}?
+      delete: I'm sure, delete this room.
+      keep: On second thought, I'll keep it.
+      warning: You will <b>not</b> be able to recover this room or any of its %{recordings_num} associated recordings.
+    invite_user:
+      email_placeholder: Enter the user's email
+      footer: The user will receive an email with instructions on how to sign up
+      send: Send Invite
+      title: Invite User
     login:
-      or: hoặc
-      with: "Đăng nhập bằng %{provider}"
-      forgot_password: "Quên Mật khẩu?"
+      or: or
+      with: Sign in with %{provider}
+      forgot_password: Forgot Password?
     rename_recording:
     room_settings:
-      title: Cài đặt Phòng
-      update: Cập nhật Phòng
-      client: Chọn chế độ sử dụng
-      mute: Tắt tiếng người dùng khi tham gia
-      default: Mặc định
+      title: Room Settings
+      update: Update Room
+      client: Select client type
+      mute: Mute users when they join
+      default: Default
       html: HTML5
       flash: Flash
-      footer_text: Điều chỉnh phòng của bạn có thể được thực hiện bất cứ lúc nào.
+      footer_text: Adjustment to your room can be done at anytime.
     rename_room:
-      name_placeholder: "Nhập mới tên phòng... "
-  name_update_success: Tên phòng đã được thay đổi thành công!
-  no_user_email_exists: Không có người dùng hiện tại với email được chỉ định. Hãy chắc chắn rằng bạn đã gõ nó chính xác.
-  omniauth_error: Một lỗi xảy ra trong khi xác thực với omniauth. Vui lòng thử lại hoặc liên hệ với quản trị viên!
+      name_placeholder: Enter a new room name...
+  name_update_success: Room name successfully changed!
+  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
+  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
   pagy:
     nav:
-      prev: "&lsaquo; Trở về"
-      next: "Kế tiếp &rsaquo;"
+      prev: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
       gap: "&hellip;"
-  password: Mật khẩu
-  password_empty_notice: Mật khẩu không được để trống.
-  password_reset_success: Mật khẩu đã được đặt lại
-  password_different_notice: Xác nhận mật khẩu không khớp.
+  password: Password
+  password_empty_notice: Password cannot be empty.
+  password_reset_success: Password has been reset.
+  password_different_notice: Password Confirmation does not match.
   provider:
     google: Google
-    office365: Office 365
+    microsoft_office365: Office 365
     twitter: Twitter
   recaptcha:
     errors:
-      recaptcha_unreachable: "Rất tiếc, chúng tôi không thể xác thực phản hồi reCAPTCHA. Vui lòng thử lại."
-      verification_failed: "xác minh reCAPTCHA không thành công, vui lòng thử lại."
+      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
+      verification_failed: reCAPTCHA verification failed, please try again.
   recording:
-    all_recordings: Tất cả bản Ghi hình
+    all_recordings: All Recordings
     email: Email Recording
-    no_recordings: "Phòng này không có bản %{inject}ghi hình nào."
-    no_user_recordings: Bạn hiện không có bản ghi hình nào.
-    no_matched_recordings: "Không có bản %{inject} ghi hình nào phù hợp với tìm kiếm của bạn."
-    recorded_on: "Được ghi vào %{date}"
+    no_recordings: This room has no %{inject}recordings.
+    no_user_recordings: You currently have no recordings.
+    no_matched_recordings: No %{inject} recordings match your search.
+    recorded_on: Recorded on %{date}
     table:
-      name: Tên
+      name: Name
       thumbnails: Thumbnails
-      length: Thời lượng
-      users: Người dùng
-      visibility: Hiển thị
-      formats: Định dạng
+      length: Length
+      users: Users
+      visibility: Visibility
+      formats: Formats
     visibility:
-      public: Công khai
-      unlisted: Không liệt kê
+      public: Public
+      unlisted: Unlisted
     format:
-      presentation: Bản trình chiếu
-  rename: Đổi tên
+      presentation: Presentation
+  registration:
+    approval: 
+      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
+      signup: Your account was successfully created. It has been sent to an administrator for approval.
+    banned:
+      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+    invite:
+      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
+      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
+  rename: Rename
   reset_password:
-    subtitle: Đặt lại mật khẩu
-    password: Mật khẩu mới
-    confirm: Xác nhận mật khẩu mới
-    update: Cập nhật Mật khẩu
+    subtitle: Reset Password
+    password: New Password
+    confirm: New Password Confirmation
+    update: Update Password
   roles:
-    administrator: Quản trị viên
-    banned: Bị cấm
+    administrator: Administrator
+    banned: Banned
+    pending: Pending
     super_admin: Super Admin
-    user: Người dùng
+    user: User
   room:
-    create_room: Tạo Phòng
-    create_room_error: Có lỗi khi tạo phòng
-    create_room_success: Phòng được tạo thành công
-    invited: Bạn đã được mời tham gia
-    invite_participants: Mời Người tham gia
-    join: Tham gia
-    last_session: "Phiên cuối cùng trên %{session}"
-    owner: Người sở hữu
-    no_sessions: Phòng này chưa có phiên nào!
-    recordings: Bản ghi hình của Phòng
-    sessions: Phiên
-    settings: Cài đặt Phòng
-    start: Bắt đầu
-    unavailable: Phòng này hiện không có sẵn do email của người sở hữu không được xác minh.
-    update_settings_error: Có lỗi khi cập nhật cài đặt phòng
-    update_settings_success: Cài đặt phòng được cập nhật thành công
+    create_room: Create a Room
+    create_room_error: There was an error creating the room
+    create_room_success: Room created successfully
+    invited: You have been invited to join
+    invite_participants: Invite Participants
+    join: Join
+    last_session: Last session on %{session}
+    owner: Owner
+    no_sessions: This room has no sessions, yet!
+    recordings: Room Recordings
+    sessions: Sessions
+    settings: Room Settings
+    start: Start
+    unavailable: This room is currently unavailable due to the owner's email not being verified.
+    update_settings_error: There was an error updating the room settings
+    update_settings_success: Room settings successfully updated
     wait:
-      message: Phòng chưa bắt đầu.
-      auto: Bạn sẽ tự động tham gia khi phòng bắt đầu.
+      message: Oops! The meeting hasn't started yet.
+      auto: You will automatically join when the meeting starts.
   settings:
     account:
-      fullname: Họ và tên
-      language: Ngôn ngữ
-      provider: Đối tác cấp tài khoản
-      image: Hình ảnh
-      image_url: Đường đẫn URL hình ảnh hồ sơ
-      subtitle: Cập nhật thông tin Tài khoản
-      title: Thông tin Tài khoản
+      fullname: Full name
+      language: Language
+      provider: Provider
+      image: Image
+      image_url: Profile Image URL
+      subtitle: Update your Account Info
+      title: Account Info
     delete:
-      button: "Có, tôi muốn xóa tài khoản của tôi."
-      disclaimer: "Nếu bạn chọn xóa tài khoản của mình, nó sẽ <b>KHÔNG THỂ</b> phục hồi. Tất cả thông tin liên quan đến tài khoản của bạn, bao gồm cài đặt phòng và bản ghi hình sẽ bị xóa."
-      subtitle: Xóa Vĩnh viễn Tài khoản của bạn
-      title: Xóa Tài khoản
+      button: Yes, I would like to delete my account.
+      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
+      subtitle: Permanently Delete your Account
+      title: Delete Account
     password:
-      confirmation: Xác nhận mật khẩu mới
-      new: Mật khẩu mới
-      old: Mật khẩu cũ
-      subtitle: Thay đổi mật khẩu của bạn
-      title: Mật khẩu
-    title: Hồ sơ
-    search: Tìm kiếm
+      confirmation: New Password Confirmation
+      new: New Password
+      old: Old Password
+      subtitle: Change your Password
+      title: Password
+    title: Profile
+    search: Search
   signup:
-    password_confirm: Xác nhận mật khẩu
-    subtitle: Tạo Tài khoản
-    title: Đăng ký
-    with: "Đăng ký với %{provider}"
+    password_confirm: Password Confirmation
+    subtitle: Create an Account
+    title: Sign up
+    with: Sign up with %{provider}
   terms:
-    accept: "Tôi chấp nhận %{href}"
-    accept_existing: Tôi chấp nhận các điều khoản và điều kiện này.
-    title: Điều khoản và điều khiện.
+    accept: I accept the %{href}
+    accept_existing: I accept the terms and conditions
+    title: Terms and Conditions
   test_install: >
-    Việc triển khai này đang sử dụng một máy chủ thử nghiệm được cấu hình sẵn, bạn nên thay thế máy chủ này bằng máy chủ của riêng bạn. Để biết chi tiết, xem %{href}.
-  update: Cập nhật
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Update
   verify:
-    accept: Xác thực
-    activated: Đã xác minh tài khoản!
-    already_verified: Tài khoản đã được xác minh
-    invalid: Liên kết xác minh không hợp lệ
-    not_verified: Tài khoản của bạn chưa được xác minh.
-    resend: Gửi lại email xác minh
-    signin: Vui lòng đăng nhập để truy cập vào tài khoản của bạn.
-    title: Xác thực email của bạn
-    verification: Xác minh
+    accept: Verify
+    activated: Account verified!
+    already_verified: Account has already been verified
+    invalid: Invalid verification link
+    not_verified: Your account has not been verified yet.
+    resend: Resend verification email
+    signin: Please sign in to access your account.
+    title: Verify your email
+    verification: Verification
